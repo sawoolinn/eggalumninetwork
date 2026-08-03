@@ -1,0 +1,94 @@
+[
+  {
+    "id": "event-1",
+    "title": "Global Sharing Session: Navigating Master's & PhD Applications Abroad",
+    "category": "Sharing Session",
+    "status": "Upcoming",
+    "date": "2026-08-25",
+    "time": "19:00 - 21:00 UTC+7",
+    "location": "Zoom Live & Campus Auditorium",
+    "speaker": {
+      "name": "Sarah Lin (Class of '19)",
+      "role": "PhD Researcher, Cambridge University",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=400"
+    },
+    "summary": "Exclusive insider guide on writing compelling SOPs, securing professor recommendations, and winning full overseas scholarships.",
+    "agenda": [
+      "19:00 - Keynote: Crafting a Winning Statement of Purpose",
+      "19:45 - Panel Discussion with 4 Abroad Scholarship Alumni",
+      "20:30 - Open Q&A & Breakout Networking Rooms"
+    ]
+  },
+  {
+    "id": "event-2",
+    "title": "Alumni Fireside Chat: Building High-Impact Tech Startups in Silicon Valley",
+    "category": "Sharing Session",
+    "status": "Upcoming",
+    "date": "2026-09-12",
+    "time": "18:30 - 20:30 UTC+7",
+    "location": "EggAlumni Innovation Center & Live Stream",
+    "speaker": {
+      "name": "David Thorne (Class of '14)",
+      "role": "Co-founder & CEO, CloudPulse (Y-Combinator '22)",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=400"
+    },
+    "summary": "David shares his journey from school classrooms to founding a venture-backed SaaS company in San Francisco.",
+    "agenda": [
+      "18:30 - Founder's Journey: From Zero to Series A",
+      "19:15 - Fundraising & Pitching to US VCs",
+      "20:00 - Interactive Q&A Session"
+    ]
+  },
+  {
+    "id": "event-3",
+    "title": "Annual Homecoming & Global Alumni Network Reunion 2026",
+    "category": "Networking Gala",
+    "status": "Upcoming",
+    "date": "2026-11-08",
+    "time": "17:00 - 22:00 UTC+7",
+    "location": "Grand Palace Hotel & Online Metaverse Stream",
+    "speaker": {
+      "name": "Alumni Steering Committee",
+      "role": "EggAlumni Network Board",
+      "avatar": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=400&q=400"
+    },
+    "summary": "Join over 600 alumni from 15 countries for our signature annual reunion, keynotes, dinner, and awards ceremony.",
+    "agenda": [
+      "17:00 - Welcome Cocktail & Regional Chapter Meetups",
+      "18:30 - Presidential Opening & Keynote Address",
+      "19:30 - Excellence Awards Ceremony & Gala Dinner"
+    ]
+  },
+  {
+    "id": "event-4",
+    "title": "Past Session: Medical Careers & Residency in the UK & Australia",
+    "category": "Sharing Session",
+    "status": "Past",
+    "date": "2026-05-14",
+    "time": "20:00 - 21:30 UTC+7",
+    "location": "Recorded Webinar",
+    "speaker": {
+      "name": "Dr. Amanda Ross (Class of '17)",
+      "role": "NHS Registrar, London St. Thomas Hospital",
+      "avatar": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=400&q=400"
+    },
+    "summary": "Step-by-step breakdown of PLAB exams, AMC pathways, and adapting to clinical practice abroad.",
+    "recordingUrl": "#"
+  },
+  {
+    "id": "event-5",
+    "title": "Past Session: Sustainable Architecture & Green Building Trends",
+    "category": "Sharing Session",
+    "status": "Past",
+    "date": "2026-03-29",
+    "time": "19:00 - 20:30 UTC+7",
+    "location": "Recorded Webinar",
+    "speaker": {
+      "name": "Kenji Takahashi (Class of '16)",
+      "role": "Lead Urban Planner, Nikken Sekkei Tokyo",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=400"
+    },
+    "summary": "Insights into net-zero design, urban climate resilience, and sustainable materials in modern Asia.",
+    "recordingUrl": "#"
+  }
+]

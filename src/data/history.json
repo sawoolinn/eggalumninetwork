@@ -1,0 +1,46 @@
+{
+  "about": {
+    "title": "Empowering Generations of Excellence & Global Leadership",
+    "story": "Founded over 35 years ago, the EggAlumni Network was created to preserve the bonds of friendship formed in our classrooms and extend those bonds into a global support network. Today, our community spans across 30+ nations, uniting professionals, researchers, entrepreneurs, and scholars.",
+    "mission": "To foster lifelong connections among alumni, support current students through mentorship and abroad scholarship opportunities, and elevate our school's global legacy.",
+    "vision": "A vibrant, world-class alumni network where every graduate empowers another to achieve groundbreaking success anywhere in the world."
+  },
+  "stats": [
+    { "label": "Total Alumni", "value": "500+", "icon": "fa-users" },
+    { "label": "Scholarships Awarded", "value": "80+", "icon": "fa-graduation-cap" },
+    { "label": "Active Global Chapters", "value": "12", "icon": "fa-globe" },
+    { "label": "Sharing Sessions Hosted", "value": "95+", "icon": "fa-comments" }
+  ],
+  "timeline": [
+    {
+      "year": "1991",
+      "title": "School Founding & First Graduating Class",
+      "description": "The institution welcomed its inaugural class of 80 students, laying the foundation for academic excellence and community leadership."
+    },
+    {
+      "year": "2002",
+      "title": "Official Charter of EggAlumni Network",
+      "description": "Former students formally established the EggAlumni Network association with its first elected executive board."
+    },
+    {
+      "year": "2010",
+      "title": "Launch of Abroad Scholarship Guidance Guild",
+      "description": "Created the first dedicated mentorship committee to prepare graduating seniors for competitive overseas university admissions."
+    },
+    {
+      "year": "2018",
+      "title": "Establishment of Global Chapters & Endowment",
+      "description": "Expanded regional chapters in North America, Europe, and Asia, accompanied by a $500,000 student assistance endowment fund."
+    },
+    {
+      "year": "2024",
+      "title": "$1.5M Endowment Milestone & Digital Portal",
+      "description": "Reached $1.5M in fund reserves and launched the integrated digital network platform connecting alumni across 30+ countries."
+    },
+    {
+      "year": "2026",
+      "title": "Global Innovation Partnerships & Virtual Hub",
+      "description": "Formed international partnerships with European research labs and Silicon Valley accelerators, offering 15+ annual fellowships abroad."
+    }
+  ]
+}

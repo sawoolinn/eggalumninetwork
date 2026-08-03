@@ -1,0 +1,62 @@
+[
+  {
+    "id": "leader-1",
+    "name": "Dr. Arthur Pendelton",
+    "role": "President, EggAlumni Network",
+    "classYear": "Class of '10",
+    "bio": "Senior Researcher in Biotechnology at Oxford University. Leads overall strategic vision, global university alliances, and scholarship endowment oversight.",
+    "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=400",
+    "linkedin": "https://linkedin.com",
+    "email": "president@eggalumni.org"
+  },
+  {
+    "id": "leader-2",
+    "name": "Sophia Martinez",
+    "role": "Vice President & Head of Global Chapters",
+    "classYear": "Class of '14",
+    "bio": "Management Consultant at Deloitte London. Manages international chapter operations across North America, Europe, and Asia-Pacific.",
+    "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=400",
+    "linkedin": "https://linkedin.com",
+    "email": "vp@eggalumni.org"
+  },
+  {
+    "id": "leader-3",
+    "name": "Kevin Tan",
+    "role": "Director of Abroad Scholarships & Mentorship",
+    "classYear": "Class of '16",
+    "bio": "Fulbright Scholar and AI Engineer. Oversees the 1-on-1 abroad scholarship guidance guild, mock interview panels, and university prep workshops.",
+    "avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=400",
+    "linkedin": "https://linkedin.com",
+    "email": "scholarships@eggalumni.org"
+  },
+  {
+    "id": "leader-4",
+    "name": "Rachel Vance",
+    "role": "Treasurer & Endowment Trustee",
+    "classYear": "Class of '13",
+    "bio": "Vice President of Investment Banking at Morgan Stanley New York. Oversees financial stewardship, auditing, and endowment growth.",
+    "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=400",
+    "linkedin": "https://linkedin.com",
+    "email": "treasurer@eggalumni.org"
+  },
+  {
+    "id": "leader-5",
+    "name": "Jonathan Miller",
+    "role": "Head of Events & Sharing Sessions",
+    "classYear": "Class of '17",
+    "bio": "Product Manager at TechCorp. Coordinates monthly online sharing sessions, career fireside chats, and the annual Homecoming Gala.",
+    "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=400",
+    "linkedin": "https://linkedin.com",
+    "email": "events@eggalumni.org"
+  },
+  {
+    "id": "leader-6",
+    "name": "Mei-Ling Zhou",
+    "role": "Secretary & Communications Lead",
+    "classYear": "Class of '19",
+    "bio": "Journalist and Public Relations Specialist. Directs monthly alumni newsletter digests, website news editorial, and social media media.",
+    "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=400",
+    "linkedin": "https://linkedin.com",
+    "email": "communications@eggalumni.org"
+  }
+]

@@ -1,0 +1,83 @@
+{
+  "subOrganizations": [
+    {
+      "id": "org-1",
+      "name": "EggAlumni Youth & Student Mentorship Guild",
+      "category": "Mentorship & Education",
+      "members": "420+ Active Mentors",
+      "lead": "Elena Rostova (Class of '18)",
+      "description": "Directly pairs senior alumni with current school seniors for university preparation, essay polishing, and abroad scholarship applications.",
+      "badge": "Sub-Organization"
+    },
+    {
+      "id": "org-2",
+      "name": "EggAlumni Tech & Innovation Alliance",
+      "category": "Industry Chapter",
+      "members": "650+ Engineers & Founders",
+      "lead": "Michael Chang (Class of '15)",
+      "description": "Fosters tech knowledge exchange, open source collaborations, startup pitch nights, and referral pipelines across top global tech hubs.",
+      "badge": "Sub-Organization"
+    },
+    {
+      "id": "org-3",
+      "name": "EggAlumni North America Chapter",
+      "category": "Regional Chapter",
+      "members": "310+ Alumni",
+      "lead": "Rachel Vance (Class of '13)",
+      "description": "Coordinates regional social gatherings, career networking events, and welcoming orientation for newly arrived students in US & Canada.",
+      "badge": "Regional Chapter"
+    },
+    {
+      "id": "org-4",
+      "name": "EggAlumni European & UK Network",
+      "category": "Regional Chapter",
+      "members": "280+ Alumni",
+      "lead": "Julian Dupuis (Class of '16)",
+      "description": "Connecting alumni across London, Paris, Berlin, Zurich, and Amsterdam with annual summits and academic exchanges.",
+      "badge": "Regional Chapter"
+    },
+    {
+      "id": "org-5",
+      "name": "EggAlumni Business & Finance Society",
+      "category": "Industry Chapter",
+      "members": "510+ Professionals",
+      "lead": "Marcus Sterling (Class of '12)",
+      "description": "Brings together professionals in investment banking, venture capital, fintech, and corporate management for quarterly market briefings.",
+      "badge": "Sub-Organization"
+    }
+  ],
+  "partnerships": [
+    {
+      "id": "partner-1",
+      "name": "Global Study Abroad Foundation",
+      "type": "Educational Alliance",
+      "region": "International",
+      "impact": "Provides 100% application fee waivers & tuition grants for EggAlumni candidates.",
+      "logo": "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=200&q=200"
+    },
+    {
+      "id": "partner-2",
+      "name": "EuroTech Innovation Hubs",
+      "type": "Research & Industry Partner",
+      "region": "Berlin & Amsterdam",
+      "impact": "Sponsors 15 funded 6-month research fellowships abroad each year.",
+      "logo": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=200&q=200"
+    },
+    {
+      "id": "partner-3",
+      "name": "Asia-Pacific University Consortium",
+      "type": "Academic Exchange Partner",
+      "region": "Tokyo, Singapore & Sydney",
+      "impact": "Facilitates priority admission and cross-campus research privileges for alumni.",
+      "logo": "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=200&q=200"
+    },
+    {
+      "id": "partner-4",
+      "name": "Starlight Ventures Accelerator",
+      "type": "Entrepreneurship Partner",
+      "region": "Silicon Valley",
+      "impact": "Direct fast-track seed funding interviews for EggAlumni founders.",
+      "logo": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=200&q=200"
+    }
+  ]
+}
