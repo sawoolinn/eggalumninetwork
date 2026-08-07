@@ -1,13 +1,10 @@
 import { useState } from 'react'
 
 const NAV_ITEMS = [
-  { id: 'home',          label: 'Home',                    icon: 'fa-house' },
-  { id: 'news',          label: 'News',     icon: 'fa-newspaper' },
-  // { id: 'organizations', label: 'Organizations', icon: 'fa-sitemap' },
-  // { id: 'history',       label: 'History',          icon: 'fa-landmark' },
-  { id: 'leadership',    label: 'Current Leadership',       icon: 'fa-user-tie' },
-  // { id: 'events',        label: 'Events',         icon: 'fa-calendar-days' },
-  { id: 'contact',       label: 'Contact Us',               icon: 'fa-paper-plane' },
+  { id: 'home',          label: 'Home',                icon: 'fa-house' },
+  { id: 'news',          label: 'News',                icon: 'fa-newspaper' },
+  { id: 'leadership',    label: 'Current Leadership',  icon: 'fa-user-tie' },
+  { id: 'contact',       label: 'Contact Us',          icon: 'fa-paper-plane' },
 ]
 
 export default function Navbar({ activeTab, onNavigate }) {
@@ -28,7 +25,7 @@ export default function Navbar({ activeTab, onNavigate }) {
           onClick={() => handleNav('home')}
           style={{ background: 'none', border: 'none', cursor: 'pointer' }}
         >
-          <img src="/assets/logo.jpeg" alt="EggAlumni Network Logo" className="brand-logo-img" />
+          <img src="assets/logo.jpeg" alt="EggAlumni Network Logo" className="brand-logo-img" />
           <div className="brand-text">
             <span className="brand-name">EGG ALUMNI</span>
             <span className="brand-sub">NETWORK</span>

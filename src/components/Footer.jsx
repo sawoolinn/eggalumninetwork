@@ -37,7 +37,7 @@ export default function Footer({ onNavigate }) {
           {/* <div className="footer-brand">
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', marginBottom: '1rem' }}>
               <img
-                src="/assets/logo.jpeg"
+                src="assets/logo.jpeg"
                 alt="EggAlumni Logo"
                 style={{ height: '50px', width: 'auto', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.15)' }}
               />
