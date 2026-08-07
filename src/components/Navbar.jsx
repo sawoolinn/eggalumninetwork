@@ -3,10 +3,10 @@ import { useState } from 'react'
 const NAV_ITEMS = [
   { id: 'home',          label: 'Home',                    icon: 'fa-house' },
   { id: 'news',          label: 'News',     icon: 'fa-newspaper' },
-  { id: 'organizations', label: 'Organizations', icon: 'fa-sitemap' },
-  { id: 'history',       label: 'History',          icon: 'fa-landmark' },
+  // { id: 'organizations', label: 'Organizations', icon: 'fa-sitemap' },
+  // { id: 'history',       label: 'History',          icon: 'fa-landmark' },
   { id: 'leadership',    label: 'Current Leadership',       icon: 'fa-user-tie' },
-  { id: 'events',        label: 'Events',         icon: 'fa-calendar-days' },
+  // { id: 'events',        label: 'Events',         icon: 'fa-calendar-days' },
   { id: 'contact',       label: 'Contact Us',               icon: 'fa-paper-plane' },
 ]
 

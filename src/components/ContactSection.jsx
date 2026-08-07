@@ -60,7 +60,7 @@ export default function ContactSection({ onShowToast }) {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.8rem' }}>
 
             {/* Office info */}
-            <div className="contact-info-card">
+            {/* <div className="contact-info-card">
               <h3 style={{ fontSize: '1.2rem', marginBottom: '1.5rem', borderBottom: '1px solid var(--color-border)', paddingBottom: '1rem' }}>
                 <i className="fa-solid fa-address-book" style={{ color: 'var(--color-primary)' }}></i> Office Information
               </h3>
@@ -78,7 +78,7 @@ export default function ContactSection({ onShowToast }) {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
 
             {/* Social links */}
             <div className="contact-info-card">
@@ -101,10 +101,10 @@ export default function ContactSection({ onShowToast }) {
                 <i className="fa-solid fa-bell"></i> Monthly Alumni Digest
               </h3>
               <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '0.9rem', marginBottom: '1.2rem' }}>
-                Get monthly scholarship updates, event invitations, and alumni spotlights delivered to your inbox.
+                {/* Get monthly scholarship updates, event invitations, and alumni spotlights delivered to your inbox. */}
               </p>
               <div style={{ display: 'flex', gap: '0.6rem' }}>
-                <input
+                {/* <input
                   type="email"
                   placeholder="your@email.com"
                   value={newsletterEmail}
@@ -116,14 +116,14 @@ export default function ContactSection({ onShowToast }) {
                     background: 'rgba(255,255,255,0.12)', color: '#fff',
                     fontFamily: 'var(--font-family)', outline: 'none',
                   }}
-                />
-                <button
+                /> */}
+                {/* <button
                   className="btn"
                   onClick={handleNewsletter}
                   style={{ background: '#FCD34D', color: 'var(--color-navy)', border: 'none', whiteSpace: 'nowrap', padding: '0.65rem 1.2rem' }}
                 >
                   <i className="fa-solid fa-paper-plane"></i> Subscribe
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
@@ -131,9 +131,9 @@ export default function ContactSection({ onShowToast }) {
           {/* ── Right: Inquiry Form ───────────── */}
           <div className="contact-form">
             <h3 style={{ fontSize: '1.3rem', marginBottom: '0.3rem' }}>Send an Inquiry</h3>
-            <p style={{ fontSize: '0.9rem', color: 'var(--color-text-muted)', marginBottom: '1.8rem' }}>
+            {/* <p style={{ fontSize: '0.9rem', color: 'var(--color-text-muted)', marginBottom: '1.8rem' }}>
               Partnerships, scholarship questions, event hosting, or media inquiries — we&apos;ll respond within 2 business days.
-            </p>
+            </p> */}
 
             <form onSubmit={handleSubmit} noValidate>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>

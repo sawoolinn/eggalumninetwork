@@ -21,9 +21,7 @@ export default function HomeSection({ onNavigate, onOpenNews, onOpenEvent }) {
               <span>Empowering Futures.</span>
             </h1>
             <p className="hero-lead">
-              Welcome to the official EggAlumni Network portal. We connect 500+ graduates,
-              facilitate abroad scholarships, host interactive sharing sessions, and empower
-              regional chapter partnerships.
+              The EGG Alumni Network was established in 2013 as a platform to unite graduates of EGG Academy, fostering collaboration and continued development among alumni. The network builds on the collective efforts of its members to promote meaningful change in their communities.
             </p>
             <div className="hero-actions">
               <button className="btn btn-primary" onClick={() => onNavigate('news')}>
@@ -37,7 +35,11 @@ export default function HomeSection({ onNavigate, onOpenNews, onOpenEvent }) {
 
           <div className="hero-media">
             {/* <div className="hero-card-glass"> */}
-              <img src="/assets/logo.jpeg" alt="EggAlumni Emblem" className="hero-logo-display" />
+              <img
+                src="/public/assets/logo.jpeg"
+                alt="EggAlumni Network emblem logo on a clean background, displaying the alumni organization name and formal academic crest in a proud, welcoming tone"
+                className="hero-logo-display"
+              />
               {/* <h3 className="hero-card-title">EGG ALUMNI NETWORK</h3>
               <p className="hero-card-desc">
                 Fostering excellence, global fellowship, and academic legacy worldwide.
@@ -56,7 +58,7 @@ export default function HomeSection({ onNavigate, onOpenNews, onOpenEvent }) {
       </section>
 
       {/* ── Stats Bar ────────────────────────── */}
-      <div className="container">
+      {/* <div className="container">
         <div className="stats-bar">
           <div className="stats-grid">
             {historyData.stats.map((stat) => (
@@ -69,7 +71,7 @@ export default function HomeSection({ onNavigate, onOpenNews, onOpenEvent }) {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* ── Latest News ──────────────────────── */}
       <section className="section">
@@ -79,9 +81,9 @@ export default function HomeSection({ onNavigate, onOpenNews, onOpenEvent }) {
               <i className="fa-solid fa-newspaper"></i> Latest Updates
             </span>
             <h2 className="section-title">Abroad Scholarships & News Spotlights</h2>
-            <p className="section-subtitle">
+            {/* <p className="section-subtitle">
               Read about our alumni achievements abroad, research fellowships, and campus announcements.
-            </p>
+            </p> */}
           </div>
 
           <div className="news-grid">
@@ -110,14 +112,14 @@ export default function HomeSection({ onNavigate, onOpenNews, onOpenEvent }) {
 
           <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
             <button className="btn btn-secondary" onClick={() => onNavigate('news')}>
-              View All News & Abroad Opportunities <i className="fa-solid fa-arrow-right"></i>
+              View All News <i className="fa-solid fa-arrow-right"></i>
             </button>
           </div>
         </div>
       </section>
 
       {/* ── Upcoming Events Preview ───────────── */}
-      <section className="section section-alt">
+      {/* <section className="section section-alt">
         <div className="container">
           <div className="section-header">
             <span className="section-tag">
@@ -163,7 +165,7 @@ export default function HomeSection({ onNavigate, onOpenNews, onOpenEvent }) {
             </button>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   )
 }

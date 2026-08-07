@@ -1,16 +1,21 @@
 {
-  "about": {
-    "title": "Empowering Generations of Excellence & Global Leadership",
-    "story": "Founded over 35 years ago, the EggAlumni Network was created to preserve the bonds of friendship formed in our classrooms and extend those bonds into a global support network. Today, our community spans across 30+ nations, uniting professionals, researchers, entrepreneurs, and scholars.",
-    "mission": "To foster lifelong connections among alumni, support current students through mentorship and abroad scholarship opportunities, and elevate our school's global legacy.",
-    "vision": "A vibrant, world-class alumni network where every graduate empowers another to achieve groundbreaking success anywhere in the world."
+ "about": {
+    "title": "",
+    "story": "The EGG Alumni Network was established in 2013 as a platform to unite graduates of EGG Academy, fostering collaboration and continued development among alumni. The network builds on the collective efforts of its members to promote meaningful change in their communities.",
+    "mission": [
+      "To collaborate with individuals and civil society organizations, building a robust network dedicated to strengthening community development.",
+      "To enhance capacity-building initiatives, raise environmental awareness, and implement small and microcredit programs to support local economies.",
+      "To organize fundraising activities and youth social gatherings, encouraging active participation in communitydevelopment"
+      ],
+    "vision": "To contribute to a stronger and more resilient society by fostering community development grounded in mutual respect, shared responsibility, and accountability."
   },
-  "stats": [
-    { "label": "Total Alumni", "value": "500+", "icon": "fa-users" },
-    { "label": "Scholarships Awarded", "value": "80+", "icon": "fa-graduation-cap" },
-    { "label": "Active Global Chapters", "value": "12", "icon": "fa-globe" },
+"stats": [
+    { "label": "Total Alumni", "value": "400+", "icon": "fa-users" },
+    { "label": "Scholarships Awarded", "value": "40+", "icon": "fa-graduation-cap" },
+    { "label": "Active Global Chapters", "value": "", "icon": "fa-globe" },
     { "label": "Sharing Sessions Hosted", "value": "95+", "icon": "fa-comments" }
   ],
+  
   "timeline": [
     {
       "year": "1991",

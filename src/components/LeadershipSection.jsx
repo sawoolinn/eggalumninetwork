@@ -11,10 +11,10 @@ export default function LeadershipSection({ onNavigate }) {
             <i className="fa-solid fa-user-tie"></i> Executive Committee
           </span>
           <h2 className="section-title">Current Leading Members</h2>
-          <p className="section-subtitle">
+          {/* <p className="section-subtitle">
             Meet the dedicated alumni who guide the EggAlumni Network — shaping partnerships,
             overseeing scholarships, and driving the mission forward.
-          </p>
+          </p> */}
         </div>
 
         {/* Leadership Grid */}
@@ -41,7 +41,7 @@ export default function LeadershipSection({ onNavigate }) {
         </div>
 
         {/* Board Election Note */}
-        <div style={{
+        {/* <div style={{
           marginTop: '3.5rem',
           background: 'linear-gradient(135deg, var(--color-bg-alt) 0%, #EFF6FF 100%)',
           border: '1px solid var(--color-border-primary)',
@@ -58,7 +58,7 @@ export default function LeadershipSection({ onNavigate }) {
           <button className="btn btn-secondary" onClick={() => onNavigate('contact')}>
             <i className="fa-solid fa-paper-plane"></i> Contact the Board
           </button>
-        </div>
+        </div> */}
 
       </div>
     </section>

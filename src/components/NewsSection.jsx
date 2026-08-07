@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react'
 import newsData from '../data/news.json'
 
 const ITEMS_PER_PAGE = 6
-const CATEGORIES = ['All', 'Scholarships Abroad', 'Partnerships & Abroad', 'Alumni Achievements', 'Campus News']
+const CATEGORIES = ['All', 'Scholarships Abroad','Alumni Achievements', "TOUNGE LA' YAT COMMUNITY COLLEGE"]
 const YEARS = ['All Years', '2026', '2025']
 const MONTHS = [
   'All Months', 'January', 'February', 'March', 'April',
@@ -46,9 +46,9 @@ export default function NewsSection({ onOpenNews }) {
             <i className="fa-solid fa-newspaper"></i> News & Announcements
           </span>
           <h2 className="section-title">Abroad Scholarships & Alumni Stories</h2>
-          <p className="section-subtitle">
+          {/* <p className="section-subtitle">
             Stay informed with the latest scholarship victories, research awards, and campus highlights from alumni around the world.
-          </p>
+          </p> */}
         </div>
 
         {/* Filters Bar */}

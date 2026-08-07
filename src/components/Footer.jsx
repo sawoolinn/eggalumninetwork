@@ -1,25 +1,25 @@
 const SOCIAL_ICONS = [
-  'fa-brands fa-facebook',
-  'fa-brands fa-instagram',
-  'fa-brands fa-linkedin',
-  'fa-brands fa-youtube',
+  // 'fa-brands fa-facebook',
+  // 'fa-brands fa-instagram',
+  // 'fa-brands fa-linkedin',
+  // 'fa-brands fa-youtube',
 ]
 
 const FOOTER_NAV = [
-  { id: 'home',          label: 'Home' },
-  { id: 'news',          label: 'News & Scholarships' },
-  { id: 'organizations', label: 'Organizations & Partners' },
-  { id: 'history',       label: 'History & About' },
-  { id: 'leadership',    label: 'Current Leadership' },
-  { id: 'events',        label: 'Events & Sharing Sessions' },
+  // { id: 'home',          label: 'Home' },
+  // { id: 'news',          label: 'News & Scholarships' },
+  // { id: 'organizations', label: 'Organizations & Partners' },
+  // { id: 'history',       label: 'History & About' },
+  // { id: 'leadership',    label: 'Current Leadership' },
+  // { id: 'events',        label: 'Events & Sharing Sessions' },
 ]
 
 const RESOURCES = [
-  'Scholarship Application Guide',
-  'Abroad Student Handbook',
-  'Alumni Directory (Members Only)',
-  'Annual Report 2025',
-  'Photo Gallery & Archives',
+  // 'Scholarship Application Guide',
+  // 'Abroad Student Handbook',
+  // 'Alumni Directory (Members Only)',
+  // 'Annual Report 2025',
+  // 'Photo Gallery & Archives',
 ]
 
 export default function Footer({ onNavigate }) {
@@ -34,7 +34,7 @@ export default function Footer({ onNavigate }) {
         <div className="footer-grid">
 
           {/* Brand */}
-          <div className="footer-brand">
+          {/* <div className="footer-brand">
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', marginBottom: '1rem' }}>
               <img
                 src="/assets/logo.jpeg"
@@ -47,18 +47,17 @@ export default function Footer({ onNavigate }) {
               </div>
             </div>
             <p>
-              Connecting over 4,500 graduates worldwide through scholarship support, shared knowledge,
-              and global community building.
+              The EGG Alumni Network was established in 2013 as a platform to unite graduates of EGG Academy, fostering collaboration and continued development among alumni. The network builds on the collective efforts of its members to promote meaningful change in their communities.
             </p>
             <div style={{ display: 'flex', gap: '0.6rem', marginTop: '1.2rem' }}>
               {SOCIAL_ICONS.map((icon) => (
                 <FooterSocialBtn key={icon} icon={icon} />
               ))}
             </div>
-          </div>
+          </div> */}
 
           {/* Navigation */}
-          <div className="footer-col">
+          {/* <div className="footer-col">
             <h4>Quick Navigation</h4>
             <ul className="footer-links">
               {FOOTER_NAV.map((item) => (
@@ -67,20 +66,20 @@ export default function Footer({ onNavigate }) {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Resources */}
-          <div className="footer-col">
+          {/* <div className="footer-col">
             <h4>Resources</h4>
             <ul className="footer-links">
               {RESOURCES.map((label) => (
                 <li key={label}><a href="#">{label}</a></li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Contact */}
-          <div className="footer-col">
+          {/* <div className="footer-col">
             <h4>Contact</h4>
             <ul className="footer-links" style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               {[
@@ -101,7 +100,7 @@ export default function Footer({ onNavigate }) {
             >
               <i className="fa-solid fa-paper-plane"></i> Send Inquiry
             </button>
-          </div>
+          </div> */}
 
         </div>
 
