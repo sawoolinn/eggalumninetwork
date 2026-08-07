@@ -36,7 +36,7 @@ export default function HomeSection({ onNavigate, onOpenNews, onOpenEvent }) {
           <div className="hero-media">
             {/* <div className="hero-card-glass"> */}
               <img
-                src="assets/logo.jpeg"
+                src="/assets/logo.jpeg"
                 alt="EggAlumni Network emblem logo on a clean background, displaying the alumni organization name and formal academic crest in a proud, welcoming tone"
                 className="hero-logo-display"
               />

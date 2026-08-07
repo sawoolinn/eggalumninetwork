@@ -1,8 +1,9 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
+// Custom domain: eggalumni.tech
+// base: '/' is correct for custom domains (assets load from domain root)
 export default defineConfig({
   plugins: [react()],
-  base: './',
+  base: '/',
 })

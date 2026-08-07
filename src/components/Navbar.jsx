@@ -25,7 +25,7 @@ export default function Navbar({ activeTab, onNavigate }) {
           onClick={() => handleNav('home')}
           style={{ background: 'none', border: 'none', cursor: 'pointer' }}
         >
-          <img src="assets/logo.jpeg" alt="EggAlumni Network Logo" className="brand-logo-img" />
+          <img src="/assets/logo.jpeg" alt="EggAlumni Network Logo" className="brand-logo-img" />
           <div className="brand-text">
             <span className="brand-name">EGG ALUMNI</span>
             <span className="brand-sub">NETWORK</span>
