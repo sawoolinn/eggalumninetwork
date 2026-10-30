@@ -1,9 +1,11 @@
 const FOOTER_NAV = [
-  { id: 'home',       label: 'Home' },
-  { id: 'news',       label: 'News & Scholarships' },
-  { id: 'leadership', label: 'Current Leadership' },
-  { id: 'events',     label: 'Events' },
-  { id: 'contact',    label: 'Contact Us' },
+  { id: 'home',          label: 'Home' },
+  { id: 'news',          label: 'News & Updates' },
+  { id: 'history',       label: 'About & History' },
+  { id: 'organizations', label: 'Partners & Affiliations' },
+  { id: 'leadership',    label: 'Current Leadership' },
+  { id: 'events',        label: 'Events & Sessions' },
+  { id: 'contact',       label: 'Contact Us' },
 ]
 
 export default function Footer({ onNavigate }) {

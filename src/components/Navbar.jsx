@@ -1,10 +1,13 @@
 import { useState } from 'react'
 
 const NAV_ITEMS = [
-  { id: 'home',       label: 'Home' },
-  { id: 'news',       label: 'News' },
-  { id: 'leadership', label: 'Leadership' },
-  { id: 'contact',    label: 'Contact' },
+  { id: 'home',          label: 'Home' },
+  { id: 'news',          label: 'News' },
+  { id: 'history',       label: 'About' },
+  { id: 'organizations', label: 'Partners' },
+  { id: 'leadership',    label: 'Leadership' },
+  { id: 'events',        label: 'Events' },
+  { id: 'contact',       label: 'Contact' },
 ]
 
 export default function Navbar({ activeTab, onNavigate }) {
