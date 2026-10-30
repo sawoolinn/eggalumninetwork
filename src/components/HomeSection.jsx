@@ -159,71 +159,33 @@ export default function HomeSection({ onNavigate, onOpenNews, onOpenEvent }) {
 
           </div>
 
-          {/* ── Latest Community Event Feature (Under Journey Milestones) ── */}
-          <div className="hv-latest-event-spotlight">
-            <div className="hv-event-spotlight-header">
-              <span className="section-tag">
-                <i className="fa-solid fa-camera-retro"></i> Latest Event Spotlight
-              </span>
-              <h3 className="hv-event-spotlight-title">
-                Art Exhibition &amp; Youth Gathering at Tounge La&apos; Yat Community College
-              </h3>
-            </div>
+          {/* ── Harvard-Style Immersive Event Banner (Left-Aligned Text on Picture) ── */}
+          <div className="hv-event-hero-banner">
+            <div className="hv-event-hero-overlay">
+              <div className="hv-event-hero-content">
+                <span className="hv-event-hero-eyebrow">
+                  <i className="fa-solid fa-calendar-check"></i> Latest Event Spotlight &middot; Tounge La&apos; Yat Community College
+                </span>
 
-            <div className="hv-event-spotlight-grid">
-              {/* Event Image */}
-              <div className="hv-event-spotlight-media">
-                <img
-                  src="/assets/latest-event-art-exhibition.jpg"
-                  alt="Students and community gathering at Tounge La' Yat Community College Art Exhibition"
-                  className="hv-event-spotlight-img"
-                />
-                <div className="hv-event-spotlight-caption">
-                  <i className="fa-solid fa-location-dot"></i> Tounge La&apos; Yat Community College &middot; Main Assembly Hall
-                </div>
-              </div>
+                <h3 className="hv-event-hero-title">
+                  Art Exhibition &amp; Youth Gathering
+                </h3>
 
-              {/* Event Narrative & Description */}
-              <div className="hv-event-spotlight-content">
-                <div className="hv-event-meta-tag">
-                  <span className="hv-event-status-pill">● Community Program</span>
-                  <span className="hv-event-date-text">
-                    <i className="fa-regular fa-calendar"></i> Recent Gathering
+                <p className="hv-event-hero-desc">
+                  Continuing the foundational vision established in 2010, students, educators, and alumni leaders recently gathered in the main assembly hall to celebrate creative expression, showcase student artwork, and open pathways for future higher education.
+                </p>
+
+                <button
+                  className="hv-event-hero-cta"
+                  onClick={() => onNavigate('events')}
+                >
+                  <span className="hv-event-hero-circle">
+                    <i className="fa-solid fa-arrow-right"></i>
                   </span>
-                </div>
-
-                <h4 className="hv-event-subheading">
-                  Empowering Youth Through Creative Expression &amp; Community Dialogue
-                </h4>
-
-                <p className="hv-event-paragraph">
-                  Continuing the vision established since 2010, the school and alumni leaders recently hosted an inspiring <strong>Art Exhibition and Community Forum</strong> at <em>Tounge La&apos; Yat Community College</em>. Students, educators, and community members gathered in the hall to celebrate youth creativity, showcase student artwork, and hold open discussions on future educational pathways.
-                </p>
-
-                <p className="hv-event-paragraph">
-                  This gathering reflects our living commitment to grassroots capacity-building: creating welcoming spaces where young scholars gain confidence, exchange ideas with alumni mentors, and explore avenues for higher education and international scholarships.
-                </p>
-
-                <div className="hv-event-keypoints">
-                  <div className="hv-event-keypoint-item">
-                    <i className="fa-solid fa-palette"></i>
-                    <div>
-                      <strong>Student Art Exhibition:</strong> Showcasing visual stories of resilience and community pride.
-                    </div>
-                  </div>
-                  <div className="hv-event-keypoint-item">
-                    <i className="fa-solid fa-comments"></i>
-                    <div>
-                      <strong>Alumni Mentorship Circle:</strong> Direct conversations bridging senior graduates with current students.
-                    </div>
-                  </div>
-                </div>
-
-                <div className="hv-event-action-row">
-                  <button className="btn btn-secondary" onClick={() => onNavigate('events')}>
-                    <i className="fa-solid fa-calendar-check"></i> Explore All Events &amp; Sessions
-                  </button>
-                </div>
+                  <span className="hv-event-hero-cta-label">
+                    Learn more about our community gatherings &amp; sessions
+                  </span>
+                </button>
               </div>
             </div>
           </div>

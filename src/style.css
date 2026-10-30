@@ -1022,162 +1022,137 @@ a:hover { color: var(--color-navy); text-decoration: underline; }
   }
 }
 
-/* ── LATEST COMMUNITY EVENT SPOTLIGHT (Under Journey) ── */
-.hv-latest-event-spotlight {
+/* ── HARVARD-STYLE IMMERSIVE EVENT BANNER (Left-Aligned Text on Picture) ── */
+.hv-event-hero-banner {
   margin-top: 5rem;
-  border-top: 2px solid var(--color-border);
-  padding-top: 3.5rem;
-}
-
-.hv-event-spotlight-header {
-  margin-bottom: 2.25rem;
-}
-
-.hv-event-spotlight-title {
-  font-family: var(--font-serif);
-  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
-  color: var(--color-navy);
-  font-weight: 700;
-  margin-top: 0.5rem;
-  line-height: 1.25;
-}
-
-.hv-event-spotlight-grid {
-  display: grid;
-  grid-template-columns: 1.15fr 1fr;
-  gap: 3.5rem;
-  align-items: center;
-  background: #ffffff;
-  border: 1px solid var(--color-border);
-  padding: 2.25rem;
-  box-shadow: var(--shadow-sm);
-}
-
-.hv-event-spotlight-media {
+  background-image: url('/assets/latest-event-art-exhibition.jpg');
+  background-size: cover;
+  background-position: center 30%;
   position: relative;
-  overflow: hidden;
   border: 1px solid var(--color-border);
-  background: var(--color-bg-alt);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
 }
 
-.hv-event-spotlight-img {
-  width: 100%;
-  height: 380px;
-  object-fit: cover;
-  display: block;
-  transition: transform var(--transition-normal);
-}
-.hv-event-spotlight-media:hover .hv-event-spotlight-img {
-  transform: scale(1.02);
-}
-
-.hv-event-spotlight-caption {
-  background: var(--color-navy);
-  color: rgba(255, 255, 255, 0.88);
-  font-family: var(--font-sans);
-  font-size: 0.78rem;
-  font-weight: 500;
-  padding: 0.7rem 1.1rem;
+.hv-event-hero-overlay {
+  background: linear-gradient(
+    90deg,
+    rgba(8, 22, 48, 0.95) 0%,
+    rgba(13, 34, 70, 0.88) 50%,
+    rgba(13, 34, 70, 0.58) 85%,
+    rgba(13, 34, 70, 0.42) 100%
+  );
+  padding: 5.5rem 4.5rem;
+  min-height: 480px;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-.hv-event-spotlight-caption i {
-  color: var(--color-accent-gold);
 }
 
-.hv-event-spotlight-content {
-  display: flex;
-  flex-direction: column;
+.hv-event-hero-content {
+  max-width: 680px;
+  text-align: left;
+  color: #ffffff;
 }
 
-.hv-event-meta-tag {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
-  flex-wrap: wrap;
-}
-
-.hv-event-status-pill {
-  background: #DCFCE7;
-  color: #15803D;
-  font-family: var(--font-sans);
-  font-size: 0.72rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  padding: 0.25rem 0.65rem;
-}
-
-.hv-event-date-text {
-  font-family: var(--font-sans);
-  font-size: 0.8rem;
-  color: var(--color-text-muted);
+.hv-event-hero-eyebrow {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-}
-
-.hv-event-subheading {
-  font-family: var(--font-serif);
-  font-size: 1.25rem;
-  color: var(--color-navy);
+  gap: 0.5rem;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
   font-weight: 700;
-  margin-bottom: 1rem;
-  line-height: 1.35;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #FFD036; /* British banana yellow */
+  margin-bottom: 1.25rem;
 }
 
-.hv-event-paragraph {
-  font-family: var(--font-sans);
-  font-size: 0.92rem;
-  color: var(--color-text-muted);
-  line-height: 1.75;
-  margin-bottom: 1rem;
+.hv-event-hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.2rem, 3.8vw, 3.2rem);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+  text-align: left;
 }
-.hv-event-paragraph strong {
+
+.hv-event-hero-desc {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.75;
+  margin-bottom: 2.5rem;
+  text-align: left;
+}
+
+/* Harvard-Style Circular Arrow Button */
+.hv-event-hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+  text-align: left;
+}
+
+.hv-event-hero-circle {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: var(--color-navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  transition: transform var(--transition-normal), background var(--transition-normal), color var(--transition-normal);
+  flex-shrink: 0;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+.hv-event-hero-cta-label {
+  font-family: var(--font-sans);
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.01em;
+  transition: color var(--transition-fast);
+}
+
+.hv-event-hero-cta:hover .hv-event-hero-circle {
+  transform: translateX(6px);
+  background: #FFD036;
   color: var(--color-navy);
 }
-
-.hv-event-keypoints {
-  display: flex;
-  flex-direction: column;
-  gap: 0.85rem;
-  margin: 1.25rem 0 1.75rem 0;
-  border-top: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
-  padding: 1.25rem 0;
-}
-
-.hv-event-keypoint-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.85rem;
-  font-family: var(--font-sans);
-  font-size: 0.86rem;
-  color: var(--color-text-main);
-  line-height: 1.5;
-}
-.hv-event-keypoint-item i {
-  color: var(--color-primary);
-  margin-top: 0.15rem;
-  font-size: 1rem;
-  flex-shrink: 0;
-}
-
-.hv-event-action-row {
-  margin-top: 0.5rem;
+.hv-event-hero-cta:hover .hv-event-hero-cta-label {
+  text-decoration: underline;
 }
 
 @media (max-width: 992px) {
-  .hv-event-spotlight-grid {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-    padding: 1.5rem;
+  .hv-event-hero-overlay {
+    padding: 4rem 2.5rem;
+    min-height: 420px;
   }
-  .hv-event-spotlight-img {
-    height: 300px;
+}
+
+@media (max-width: 768px) {
+  .hv-event-hero-overlay {
+    padding: 3.5rem 1.75rem;
+    background: linear-gradient(
+      180deg,
+      rgba(8, 22, 48, 0.92) 0%,
+      rgba(13, 34, 70, 0.95) 100%
+    );
+  }
+  .hv-event-hero-title {
+    font-size: 1.95rem;
+  }
+  .hv-event-hero-desc {
+    font-size: 0.95rem;
   }
 }
 
