@@ -1,10 +1,10 @@
 import { useState } from 'react'
 
 const NAV_ITEMS = [
-  { id: 'home',          label: 'Home',                icon: 'fa-house' },
-  { id: 'news',          label: 'News',                icon: 'fa-newspaper' },
-  { id: 'leadership',    label: 'Current Leadership',  icon: 'fa-user-tie' },
-  { id: 'contact',       label: 'Contact Us',          icon: 'fa-paper-plane' },
+  { id: 'home',       label: 'Home' },
+  { id: 'news',       label: 'News' },
+  { id: 'leadership', label: 'Leadership' },
+  { id: 'contact',    label: 'Contact' },
 ]
 
 export default function Navbar({ activeTab, onNavigate }) {
@@ -23,7 +23,6 @@ export default function Navbar({ activeTab, onNavigate }) {
         <button
           className="brand-logo-link"
           onClick={() => handleNav('home')}
-          style={{ background: 'none', border: 'none', cursor: 'pointer' }}
         >
           <img src="/assets/logo.jpeg" alt="EggAlumni Network Logo" className="brand-logo-img" />
           <div className="brand-text">
@@ -40,7 +39,7 @@ export default function Navbar({ activeTab, onNavigate }) {
                 className={activeTab === item.id ? 'active' : ''}
                 onClick={() => handleNav(item.id)}
               >
-                <i className={`fa-solid ${item.icon}`}></i> {item.label}
+                {item.label}
               </button>
             </li>
           ))}
