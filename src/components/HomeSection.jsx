@@ -263,7 +263,7 @@ export default function HomeSection({ onNavigate, onOpenNews, onOpenEvent }) {
       {/* ── Mission Strip ── */}
       <section style={{ background: 'var(--color-bg-alt)', padding: '4rem 0', borderBottom: '1px solid var(--color-border)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '2rem' }}>
+          <div className="hv-mission-grid">
             {[
               { icon: 'fa-handshake', title: 'Community', desc: 'Building bridges between alumni across generations, professions, and continents.' },
               { icon: 'fa-graduation-cap', title: 'Scholarship', desc: 'Guiding members toward internationally recognised study-abroad and fellowship opportunities.' },
@@ -372,7 +372,7 @@ export default function HomeSection({ onNavigate, onOpenNews, onOpenEvent }) {
               Full Committee
             </button>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '1.75rem' }}>
+          <div className="hv-featured-leaders-grid">
             {featuredLeaders.map((leader) => (
               <div key={leader.id} className="leader-card">
                 <img src={leader.avatar} alt={leader.name} className="leader-avatar" />

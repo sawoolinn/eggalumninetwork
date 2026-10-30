@@ -1767,41 +1767,217 @@ a:hover { color: var(--color-navy); text-decoration: underline; }
 .filter-tag.active,
 .filter-tag:hover { background: var(--color-navy); color: #fff; border-color: var(--color-navy); }
 
-/* ── RESPONSIVE ── */
+/* ── RESPONSIVE DESIGN SYSTEM (Desktop, Tablet & Phone Screen Optimization) ── */
+.hv-mission-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.hv-featured-leaders-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+/* Tablet (Max 992px) */
 @media (max-width: 992px) {
   .hv-desktop-nav { display: none; }
   .hv-mega-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-  .hero-grid { grid-template-columns: 1fr; }
-  .hero-media { display: none; }
+  .hero-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .hero-media { display: flex; justify-content: center; }
+  .hero-logo-display { max-width: 280px; }
   .hero-lead { max-width: 100%; }
-  .stats-grid { grid-template-columns: repeat(2, 1fr); }
-  .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 1.5rem; }
-  .contact-grid { grid-template-columns: 1fr; }
+  .hv-mission-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .hv-featured-leaders-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+  .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
   .timeline::before { left: 20px; }
   .timeline-item,
   .timeline-item:nth-child(even) { width: 100%; padding-left: 50px; padding-right: 1.5rem; margin-left: 0; }
   .timeline-dot,
   .timeline-item:nth-child(even) .timeline-dot { left: 10px; right: auto; }
-  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+  div[style*="gridTemplateColumns"] { grid-template-columns: 1fr !important; gap: 2rem !important; }
 }
 
+/* Mobile & Phone (Max 768px) */
 @media (max-width: 768px) {
-  .hv-brand-shield { height: 44px; }
-  .hv-brand-title { font-size: 0.98rem; }
-  .hv-brand-sub { font-size: 0.58rem; }
-  .news-grid { grid-template-columns: 1fr; }
-}
+  .container { padding: 0 1.25rem; }
+  .section { padding: 3.5rem 0; }
 
-@media (max-width: 540px) {
+  /* Header on Phone */
+  .hv-header-container { height: 68px; }
+  .hv-brand { gap: 0.6rem; }
+  .hv-brand-shield { height: 40px; padding: 1px; }
+  .hv-brand-title { font-size: 0.95rem; }
+  .hv-brand-sub { font-size: 0.55rem; letter-spacing: 0.12em; }
+  .hv-header-actions { gap: 0.35rem; }
+  .hv-action-btn { padding: 0.45rem 0.65rem; font-size: 0.72rem; }
   .hv-action-label { display: none; }
   .hv-cta-contact-btn { display: none; }
+  .hv-search-overlay { padding: 0.75rem 0; }
+  .hv-search-box { padding: 0.35rem 0.65rem; }
+
+  /* Fullscreen Mega Menu on Phone */
+  .hv-mega-container { padding: 1.5rem 1.25rem 2.5rem 1.25rem; }
+  .hv-mega-header { margin-bottom: 2rem; padding-bottom: 1.25rem; }
+  .hv-mega-brand-name { font-size: 0.95rem; }
+  .hv-mega-nav-text { font-size: 1.15rem; }
   .hv-mega-footer { flex-direction: column; gap: 1rem; text-align: center; }
+
+  /* Hero Section on Phone */
+  .hero {
+    padding: 3.5rem 0 3rem 0;
+    background-position: center 20%;
+  }
+  .hero-badge { margin-bottom: 1.25rem; font-size: 0.68rem; padding: 0.35rem 0.75rem; }
+  .hero-title {
+    font-size: clamp(1.85rem, 6.8vw, 2.3rem);
+    line-height: 1.2;
+    margin-bottom: 1.15rem;
+  }
+  .hero-lead {
+    font-size: 0.92rem;
+    line-height: 1.7;
+    margin-bottom: 1.75rem;
+  }
+  .hero-actions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.8rem 1.25rem;
+    font-size: 0.82rem;
+  }
+  .hero-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+  .hero-logo-display {
+    max-width: 220px;
+    padding: 6px;
+  }
+
+  /* Stats Bar on Phone */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem;
+  }
+  .stat-item {
+    border-right: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding-bottom: 0.75rem;
+  }
+  .stat-number { font-size: 1.85rem; }
+  .stat-label { font-size: 0.72rem; }
+
+  /* Journey Milestones on Phone */
+  .hv-journey-section { padding: 3.5rem 0; }
+  .hv-journey-title { font-size: 1.75rem; }
+  .hv-founder-callout { padding: 1.25rem; margin: 1.5rem 0; }
+  .hv-founder-quote { font-size: 0.92rem; }
+  .hv-journey-roadmap { padding: 1.5rem 1.25rem; }
+  .hv-roadmap-item { grid-template-columns: 55px 1fr; gap: 0.65rem; }
+  .hv-roadmap-year { font-size: 0.95rem; }
+  .hv-roadmap-card { padding: 1rem 1.15rem; }
+  .hv-roadmap-title { font-size: 0.95rem; }
+  .hv-roadmap-desc { font-size: 0.82rem; }
+
+  /* The Three Event Spotlight Banners on Phone */
+  .hv-event-spotlights-stack {
+    gap: 2rem;
+    margin-top: 3.5rem;
+  }
+  .hv-event-hero-overlay,
+  .hv-overlay-right {
+    padding: 3rem 1.25rem;
+    min-height: auto;
+    background: linear-gradient(
+      180deg,
+      rgba(8, 22, 48, 0.94) 0%,
+      rgba(13, 34, 70, 0.97) 100%
+    ) !important;
+    justify-content: flex-start;
+  }
+  .hv-event-hero-content,
+  .hv-content-right {
+    max-width: 100%;
+    text-align: left !important;
+    align-items: flex-start !important;
+    margin-left: 0;
+  }
+  .hv-event-hero-eyebrow,
+  .hv-eyebrow-right {
+    justify-content: flex-start !important;
+    font-size: 0.7rem;
+    margin-bottom: 0.85rem;
+  }
+  .hv-event-hero-title,
+  .hv-title-right {
+    font-size: 1.65rem;
+    text-align: left !important;
+    line-height: 1.25;
+    margin-bottom: 0.85rem;
+  }
+  .hv-event-hero-desc,
+  .hv-desc-right {
+    font-size: 0.9rem;
+    line-height: 1.65;
+    margin-bottom: 1.75rem;
+    text-align: left !important;
+  }
+  .hv-event-hero-cta,
+  .hv-cta-right {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    text-align: left !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+  }
+  .hv-event-hero-circle {
+    width: 38px;
+    height: 38px;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+  }
+  .hv-event-hero-cta-label {
+    font-size: 0.88rem;
+    line-height: 1.4;
+  }
+
+  /* Cards & Lists on Phone */
+  .news-grid,
+  .events-grid,
+  .leadership-grid,
+  .org-grid,
+  .hv-featured-leaders-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  /* Footer & Form on Phone */
+  .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    font-size: 16px !important;
+  }
+  .modal-box { width: 95%; max-height: 90vh; }
+  .modal-header { padding: 1.25rem 1.25rem 0.75rem 1.25rem; }
+  .modal-body { padding: 1rem 1.25rem 1.5rem 1.25rem; }
+  .toast { right: 1rem; left: 1rem; bottom: 1rem; }
 }
 
+/* Extra Small Phones (Max 480px) */
 @media (max-width: 480px) {
-  .hero { padding: 4rem 0 3rem 0; }
-  .hero-title { font-size: 2.1rem; }
-  .stats-grid { grid-template-columns: 1fr; }
-  .footer-grid { grid-template-columns: 1fr; }
-  .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+  .hero-title { font-size: 1.85rem; }
+  .hv-event-hero-title, .hv-title-right { font-size: 1.5rem; }
+  .stats-grid { grid-template-columns: 1fr 1fr !important; }
 }
