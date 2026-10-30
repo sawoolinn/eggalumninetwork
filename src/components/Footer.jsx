@@ -78,11 +78,11 @@ export default function Footer({ onNavigate }) {
 
         {/* Bottom bar */}
         <div className="footer-bottom">
-          <span>© {new Date().getFullYear()} EggAlumni Network. All rights reserved.</span>
-          <span style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
-            {['Privacy Policy', 'Terms of Use', 'Sitemap'].map((label) => (
-              <a key={label} href="#" style={{ color: 'rgba(255,255,255,0.38)', fontSize: '0.78rem' }}>{label}</a>
-            ))}
+          <span>&copy; {new Date().getFullYear()} EggAlumni Network. All rights reserved.</span>
+          <span style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap', alignItems: 'center' }}>
+            <button onClick={() => handleNav('history')} style={{ background: 'none', border: 'none', color: 'rgba(255,255,255,0.45)', fontSize: '0.78rem', cursor: 'pointer', padding: 0, fontFamily: 'var(--font-sans)' }}>About Network</button>
+            <button onClick={() => handleNav('contact')} style={{ background: 'none', border: 'none', color: 'rgba(255,255,255,0.45)', fontSize: '0.78rem', cursor: 'pointer', padding: 0, fontFamily: 'var(--font-sans)' }}>Privacy &amp; Terms</button>
+            <button onClick={() => handleNav('home')} style={{ background: 'none', border: 'none', color: 'rgba(255,255,255,0.45)', fontSize: '0.78rem', cursor: 'pointer', padding: 0, fontFamily: 'var(--font-sans)' }}>Back to Top &uarr;</button>
           </span>
         </div>
       </div>

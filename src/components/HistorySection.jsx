@@ -1,6 +1,6 @@
 import historyData from '../data/history.json'
 
-export default function HistorySection() {
+export default function HistorySection({ onNavigate }) {
   const { about, timeline, stats } = historyData
 
   const missionList = Array.isArray(about.mission) ? about.mission : [about.mission]
@@ -134,6 +134,31 @@ export default function HistorySection() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ── Journey Call to Action ── */}
+      <section style={{ background: 'var(--color-navy)', padding: '4.5rem 0', borderTop: '3px solid var(--color-primary)' }}>
+        <div className="container" style={{ textAlign: 'center' }}>
+          <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.72rem', fontWeight: '700', letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.45)', display: 'block', marginBottom: '0.75rem' }}>
+            BECOME PART OF OUR LEGACY
+          </span>
+          <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(1.75rem,3.5vw,2.5rem)', color: '#fff', marginBottom: '1rem', fontWeight: '700' }}>
+            Continue the Journey with EGG Alumni
+          </h2>
+          <p style={{ color: 'rgba(255,255,255,0.65)', fontSize: '0.95rem', maxWidth: '540px', margin: '0 auto 2rem auto', fontFamily: 'var(--font-sans)', lineHeight: '1.75' }}>
+            Reach out to connect with regional chapters, get involved in student mentorship, or support our scholarship fund.
+          </p>
+          {onNavigate && (
+            <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+              <button className="btn btn-primary" onClick={() => onNavigate('contact')}>
+                <i className="fa-solid fa-paper-plane"></i> Get in Touch
+              </button>
+              <button className="btn btn-outline-white" onClick={() => onNavigate('leadership')}>
+                <i className="fa-solid fa-users"></i> Meet Executive Board
+              </button>
+            </div>
+          )}
         </div>
       </section>
 

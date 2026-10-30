@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import newsData from '../data/news.json'
 
 const ITEMS_PER_PAGE = 6
@@ -9,12 +9,19 @@ const MONTHS = [
   'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December',
 ]
 
-export default function NewsSection({ onOpenNews }) {
+export default function NewsSection({ onOpenNews, initialSearch = '', onNavigate }) {
   const [category, setCategory] = useState('All')
   const [year, setYear]         = useState('All Years')
   const [month, setMonth]       = useState('All Months')
-  const [search, setSearch]     = useState('')
+  const [search, setSearch]     = useState(initialSearch)
   const [page, setPage]         = useState(1)
+
+  useEffect(() => {
+    if (initialSearch !== undefined) {
+      setSearch(initialSearch)
+      setPage(1)
+    }
+  }, [initialSearch])
 
   const filtered = useMemo(() => {
     return newsData.filter((item) => {
@@ -147,6 +154,26 @@ export default function NewsSection({ onOpenNews }) {
             </div>
           )}
 
+        </div>
+      </section>
+
+      {/* ── Submit News / Story CTA ── */}
+      <section style={{ background: 'var(--color-bg-alt)', padding: '4rem 0', borderTop: '1px solid var(--color-border)' }}>
+        <div className="container" style={{ textAlign: 'center' }}>
+          <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.72rem', fontWeight: '700', letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--color-primary)', display: 'block', marginBottom: '0.5rem' }}>
+            SUBMISSIONS &amp; EDITORIAL
+          </span>
+          <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.8rem', color: 'var(--color-navy)', marginBottom: '0.85rem' }}>
+            Have News or an Achievement to Share?
+          </h2>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.92rem', maxWidth: '520px', margin: '0 auto 1.75rem auto', lineHeight: '1.7', fontFamily: 'var(--font-sans)' }}>
+            We spotlight abroad scholarships, academic fellowships, career milestones, and community projects of our graduates worldwide.
+          </p>
+          {onNavigate && (
+            <button className="btn btn-primary" onClick={() => onNavigate('contact')}>
+              <i className="fa-solid fa-paper-plane"></i> Submit Your Story
+            </button>
+          )}
         </div>
       </section>
     </div>

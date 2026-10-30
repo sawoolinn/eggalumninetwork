@@ -189,7 +189,7 @@ a:hover { color: var(--color-navy); text-decoration: underline; }
   font-size: 0.88rem;
   font-weight: 600;
   color: #1a1a1a;
-  padding: 0.5rem 0.95rem;
+  padding: 0.5rem 0.75rem;
   cursor: pointer;
   letter-spacing: 0.01em;
   transition: all var(--transition-fast);
@@ -271,6 +271,11 @@ a:hover { color: var(--color-navy); text-decoration: underline; }
 .hv-cta-contact-btn:hover {
   background: var(--color-navy);
   border-color: var(--color-navy);
+}
+.hv-cta-contact-btn.active {
+  background: var(--color-navy);
+  border-color: var(--color-accent-gold);
+  color: var(--color-accent-gold);
 }
 
 /* ── Harvard Instant Search Bar ── */

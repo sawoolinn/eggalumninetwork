@@ -10,7 +10,7 @@ const PRIMARY_NAV = [
   { id: 'contact',       label: 'Contact',      num: '07' },
 ]
 
-export default function Navbar({ activeTab, onNavigate }) {
+export default function Navbar({ activeTab, onNavigate, onSearch }) {
   const [megaMenuOpen, setMegaMenuOpen] = useState(false)
   const [searchOpen, setSearchOpen] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
@@ -45,7 +45,13 @@ export default function Navbar({ activeTab, onNavigate }) {
   const handleSearchSubmit = (e) => {
     e.preventDefault()
     if (searchQuery.trim()) {
-      handleNav('news')
+      if (onSearch) {
+        onSearch(searchQuery.trim())
+      } else {
+        handleNav('news')
+      }
+      setSearchOpen(false)
+      setMegaMenuOpen(false)
     }
   }
 
@@ -77,7 +83,7 @@ export default function Navbar({ activeTab, onNavigate }) {
           {/* Desktop Navigation Links */}
           <nav className="hv-desktop-nav" aria-label="Main Navigation">
             <ul className="hv-nav-list">
-              {PRIMARY_NAV.slice(0, 6).map((item) => (
+              {PRIMARY_NAV.map((item) => (
                 <li key={item.id} className="hv-nav-item">
                   <button
                     className={`hv-nav-link ${activeTab === item.id ? 'active' : ''}`}
@@ -116,7 +122,7 @@ export default function Navbar({ activeTab, onNavigate }) {
             </button>
 
             <button
-              className="hv-cta-contact-btn"
+              className={`hv-cta-contact-btn ${activeTab === 'contact' ? 'active' : ''}`}
               onClick={() => handleNav('contact')}
             >
               Inquire

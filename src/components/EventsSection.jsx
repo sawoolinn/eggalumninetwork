@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import eventsData from '../data/events.json'
 
-export default function EventsSection({ onOpenEvent }) {
+export default function EventsSection({ onOpenEvent, onNavigate }) {
   const [activeTab, setActiveTab] = useState('upcoming')
   const upcoming = eventsData.filter((e) => e.status === 'Upcoming')
   const past     = eventsData.filter((e) => e.status !== 'Upcoming')
@@ -93,6 +93,15 @@ export default function EventsSection({ onOpenEvent }) {
             <p style={{ fontSize: '0.95rem', color: 'var(--color-text-muted)', lineHeight: '1.8', fontFamily: 'var(--font-sans)' }}>
               Sessions can be held online or in-person. Our team will handle promotion, registration, and technical support.
             </p>
+            {onNavigate && (
+              <button
+                className="btn btn-primary"
+                style={{ marginTop: '1.75rem' }}
+                onClick={() => onNavigate('contact')}
+              >
+                <i className="fa-solid fa-microphone"></i> Propose an Alumni Session
+              </button>
+            )}
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             {[

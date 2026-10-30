@@ -15,9 +15,16 @@ function App() {
   const [activeTab, setActiveTab] = useState('home')
   const [modal, setModal] = useState(null)       // { type: 'news'|'event', data: {} }
   const [toast, setToast] = useState(null)       // { message: '' }
+  const [newsSearch, setNewsSearch] = useState('')
 
   const navigateTo = (tab) => {
     setActiveTab(tab)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
+  const handleSearch = (query) => {
+    setNewsSearch(query)
+    setActiveTab('news')
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
@@ -33,19 +40,19 @@ function App() {
   const renderSection = () => {
     switch (activeTab) {
       case 'home':          return <HomeSection onNavigate={navigateTo} onOpenNews={openNewsModal} onOpenEvent={openEventModal} />
-      case 'news':          return <NewsSection onOpenNews={openNewsModal} />
-      case 'organizations': return <OrganizationSection />
-      case 'history':       return <HistorySection />
+      case 'news':          return <NewsSection onOpenNews={openNewsModal} initialSearch={newsSearch} onNavigate={navigateTo} />
+      case 'organizations': return <OrganizationSection onNavigate={navigateTo} />
+      case 'history':       return <HistorySection onNavigate={navigateTo} />
       case 'leadership':    return <LeadershipSection onNavigate={navigateTo} />
-      case 'events':        return <EventsSection onOpenEvent={openEventModal} />
-      case 'contact':       return <ContactSection onShowToast={showToast} />
+      case 'events':        return <EventsSection onOpenEvent={openEventModal} onNavigate={navigateTo} />
+      case 'contact':       return <ContactSection onShowToast={showToast} onNavigate={navigateTo} />
       default:              return <HomeSection onNavigate={navigateTo} onOpenNews={openNewsModal} onOpenEvent={openEventModal} />
     }
   }
 
   return (
     <>
-      <Navbar activeTab={activeTab} onNavigate={navigateTo} />
+      <Navbar activeTab={activeTab} onNavigate={navigateTo} onSearch={handleSearch} />
 
       <main id="main-content">
         {renderSection()}

@@ -1,6 +1,6 @@
 import organizationsData from '../data/organizations.json'
 
-export default function OrganizationSection() {
+export default function OrganizationSection({ onNavigate }) {
   return (
     <div style={{ minHeight: '100vh' }}>
 
@@ -74,6 +74,15 @@ export default function OrganizationSection() {
               <p style={{ fontSize: '0.95rem', color: 'var(--color-text-muted)', lineHeight: '1.8', fontFamily: 'var(--font-sans)' }}>
                 Partnerships may include scholarship sponsorships, co-hosted events, mentorship programmes, research collaborations, or employment pipelines.
               </p>
+              {onNavigate && (
+                <button
+                  className="btn btn-primary"
+                  style={{ marginTop: '2rem' }}
+                  onClick={() => onNavigate('contact')}
+                >
+                  <i className="fa-solid fa-handshake"></i> Inquire About Partnership
+                </button>
+              )}
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               {[

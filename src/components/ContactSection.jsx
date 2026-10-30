@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 const INIT = { name: '', classYear: '', email: '', subject: '', message: '' }
 
-export default function ContactSection({ onShowToast }) {
+export default function ContactSection({ onShowToast, onNavigate }) {
   const [form, setForm]           = useState(INIT)
   const [submitting, setSubmitting] = useState(false)
 
@@ -93,12 +93,18 @@ export default function ContactSection({ onShowToast }) {
               <div style={{ marginTop: '2.5rem', background: 'var(--color-navy)', padding: '1.75rem', borderLeft: '4px solid var(--color-accent-gold)' }}>
                 <h4 style={{ fontFamily: 'var(--font-serif)', fontSize: '1rem', color: '#fff', marginBottom: '1rem' }}>Frequently Asked Questions</h4>
                 {[
-                  'How do I become a member?',
-                  'How can I apply for a scholarship?',
-                  'How do I host a sharing session?',
-                  'How do I update my alumni profile?',
-                ].map((q) => (
-                  <div key={q} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem 0', borderBottom: '1px solid rgba(255,255,255,0.08)', fontFamily: 'var(--font-sans)', fontSize: '0.85rem', color: 'rgba(255,255,255,0.7)', cursor: 'pointer' }}>
+                  { q: 'How do I become a member?', action: () => setForm((f) => ({ ...f, subject: 'Membership Registration Inquiry' })) },
+                  { q: 'How can I apply for a scholarship?', action: () => onNavigate ? onNavigate('news') : null },
+                  { q: 'How do I host a sharing session?', action: () => onNavigate ? onNavigate('events') : null },
+                  { q: 'How do I update my alumni profile?', action: () => setForm((f) => ({ ...f, subject: 'Alumni Profile Update Request' })) },
+                ].map(({ q, action }) => (
+                  <div
+                    key={q}
+                    onClick={action}
+                    style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.65rem 0', borderBottom: '1px solid rgba(255,255,255,0.08)', fontFamily: 'var(--font-sans)', fontSize: '0.85rem', color: 'rgba(255,255,255,0.85)', cursor: 'pointer', transition: 'color 0.15s ease' }}
+                    onMouseEnter={(e) => e.currentTarget.style.color = 'var(--color-accent-gold)'}
+                    onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(255,255,255,0.85)'}
+                  >
                     <i className="fa-solid fa-chevron-right" style={{ color: 'var(--color-accent-gold)', fontSize: '0.65rem' }}></i> {q}
                   </div>
                 ))}
