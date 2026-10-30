@@ -777,6 +777,248 @@ a:hover { color: var(--color-navy); text-decoration: underline; }
   font-family: var(--font-sans);
 }
 
+/* ── HARVARD-STYLE ABOUT US & JOURNEY (2010 TO 2026) ── */
+.hv-journey-section {
+  background: #ffffff;
+  padding: 6rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.hv-journey-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1.25fr;
+  gap: 4.5rem;
+  align-items: flex-start;
+}
+
+/* Left Narrative */
+.hv-about-narrative {}
+
+.hv-journey-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 3.2vw, 2.75rem);
+  color: var(--color-navy);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0.8rem 0 1.5rem 0;
+}
+.hv-journey-title span {
+  color: #A51C30;
+  font-style: italic;
+}
+
+.hv-journey-lead {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  color: var(--color-text-main);
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+  font-weight: 500;
+}
+
+.hv-journey-body {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+/* Harvard-Style Founder Callout Box */
+.hv-founder-callout {
+  position: relative;
+  background: var(--color-bg-alt);
+  border-left: 4px solid #A51C30;
+  border-top: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  padding: 1.75rem 2rem 1.75rem 2.25rem;
+  margin: 2rem 0;
+}
+
+.hv-founder-quote-mark {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  color: rgba(165, 28, 48, 0.2);
+  line-height: 1;
+  pointer-events: none;
+}
+
+.hv-founder-quote {
+  font-family: var(--font-serif);
+  font-size: 1.02rem;
+  font-style: italic;
+  color: var(--color-navy);
+  line-height: 1.65;
+  margin-bottom: 1rem;
+}
+
+.hv-founder-attribution {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  border-top: 1px solid var(--color-border);
+  padding-top: 0.75rem;
+}
+
+.hv-founder-name {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #A51C30;
+}
+
+.hv-founder-role {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+/* Right Roadmap Timeline */
+.hv-journey-roadmap {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  padding: 2.25rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.hv-roadmap-header {
+  border-bottom: 2px solid var(--color-border);
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.hv-roadmap-eyebrow {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #A51C30;
+  margin-bottom: 0.35rem;
+}
+
+.hv-roadmap-headline {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  color: var(--color-navy);
+  font-weight: 700;
+}
+
+.hv-roadmap-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hv-roadmap-item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 1.25rem;
+  position: relative;
+}
+
+.hv-roadmap-node {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  padding-right: 1.25rem;
+}
+
+.hv-roadmap-year {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #A51C30;
+  line-height: 1;
+  margin-bottom: 0.4rem;
+}
+
+.hv-roadmap-point {
+  position: absolute;
+  right: -5px;
+  top: 4px;
+  width: 11px;
+  height: 11px;
+  background: #A51C30;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 0 2px #A51C30;
+  z-index: 2;
+}
+
+.hv-roadmap-line {
+  position: absolute;
+  right: 0px;
+  top: 15px;
+  bottom: -25px;
+  width: 2px;
+  background: var(--color-border);
+  z-index: 1;
+}
+
+.hv-roadmap-card {
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  padding: 1.25rem 1.4rem;
+  transition: all var(--transition-fast);
+}
+.hv-roadmap-card:hover {
+  background: #ffffff;
+  box-shadow: var(--shadow-sm);
+  border-color: #A51C30;
+}
+
+.hv-roadmap-badge {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: 0.4rem;
+}
+
+.hv-roadmap-title {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  color: var(--color-navy);
+  font-weight: 700;
+  margin-bottom: 0.45rem;
+  line-height: 1.35;
+}
+
+.hv-roadmap-desc {
+  font-family: var(--font-sans);
+  font-size: 0.84rem;
+  color: var(--color-text-muted);
+  line-height: 1.65;
+}
+
+@media (max-width: 992px) {
+  .hv-journey-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .hv-roadmap-item {
+    grid-template-columns: 60px 1fr;
+    gap: 0.75rem;
+  }
+  .hv-roadmap-year {
+    font-size: 0.95rem;
+  }
+}
+
 /* ── NEWS GRID ── */
 .news-grid {
   display: grid;

@@ -59,6 +59,108 @@ export default function HomeSection({ onNavigate, onOpenNews, onOpenEvent }) {
         </div>
       </div>
 
+      {/* ── About Us & The Journey (2010 – 2026) ── */}
+      <section className="section hv-journey-section">
+        <div className="container">
+          <div className="hv-journey-grid">
+            
+            {/* Left: About Us & Founding Roots */}
+            <div className="hv-about-narrative">
+              <span className="section-tag">
+                <i className="fa-solid fa-landmark"></i> About Us &middot; Founding Roots
+              </span>
+              <h2 className="hv-journey-title">
+                Started with a Purpose in 2010, <br />
+                <span>Growing Stronger in 2026.</span>
+              </h2>
+              
+              <p className="hv-journey-lead">
+                In 2010, a group of forward-thinking educators and grassroots community leaders set out to develop the academy with a profound conviction: that empowering young individuals through rigorous education, mutual accountability, and moral courage could transform entire communities.
+              </p>
+
+              <p className="hv-journey-body">
+                What began in 2010 as a grassroots educational initiative quickly evolved. By 2013, the graduates founded the official <strong>EGG Alumni Network</strong> to ensure that every graduating cohort could remain connected, mentor junior scholars, and spearhead social development projects.
+              </p>
+
+              {/* Harvard-Style Editorial Quote Box */}
+              <div className="hv-founder-callout">
+                <div className="hv-founder-quote-mark">“</div>
+                <blockquote className="hv-founder-quote">
+                  We did not merely build classrooms; we cultivated a resilient brotherhood and sisterhood of leaders who carry their community’s future with them wherever they go in the world.
+                </blockquote>
+                <div className="hv-founder-attribution">
+                  <span className="hv-founder-name">Founding Leadership Council</span>
+                  <span className="hv-founder-role">EGG Academy Development Initiative &middot; 2010</span>
+                </div>
+              </div>
+
+              <div style={{ marginTop: '2rem' }}>
+                <button className="btn btn-secondary" onClick={() => onNavigate('history')}>
+                  Read Full History &amp; Milestones <i className="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+
+            {/* Right: Journey Milestones Roadmap (2010 to 2026) */}
+            <div className="hv-journey-roadmap">
+              <div className="hv-roadmap-header">
+                <span className="hv-roadmap-eyebrow">CHRONOLOGICAL ROADMAP</span>
+                <h3 className="hv-roadmap-headline">Our Evolutionary Path (2010 &ndash; 2026)</h3>
+              </div>
+
+              <div className="hv-roadmap-timeline">
+                {[
+                  {
+                    year: '2010',
+                    title: 'The Founding & School Development',
+                    desc: 'Visionary founders and community leaders initiated the development of EGG Academy, establishing core curricula focused on civic responsibility, academic rigor, and leadership.',
+                    tag: 'Genesis & Development'
+                  },
+                  {
+                    year: '2013',
+                    title: 'Alumni Network Formalization',
+                    desc: 'The graduating alumni united to establish the official EGG Alumni Network, instituting democratic governance and mutual mentorship frameworks.',
+                    tag: 'Official Charter'
+                  },
+                  {
+                    year: '2018',
+                    title: 'Abroad Scholarship Guild & Global Reach',
+                    desc: 'Expanded overseas university guidance, supporting students to secure study-abroad scholarships across Europe, Asia, and North America.',
+                    tag: 'Global Fellowship'
+                  },
+                  {
+                    year: '2022',
+                    title: 'Community Capacity & Microcredit Programs',
+                    desc: 'Pioneered microcredit support for local economies, environmental awareness campaigns, and youth-led community development initiatives.',
+                    tag: 'Civic Impact'
+                  },
+                  {
+                    year: '2026',
+                    title: 'Global Innovation & 400+ Alumni Milestone',
+                    desc: 'A thriving international fellowship of 400+ graduates active across 30+ nations, advancing research fellowships, institutional partnerships, and continuous alumni mentorship.',
+                    tag: '2026 & Beyond'
+                  }
+                ].map((item, idx) => (
+                  <div key={item.year} className="hv-roadmap-item">
+                    <div className="hv-roadmap-node">
+                      <span className="hv-roadmap-year">{item.year}</span>
+                      <div className="hv-roadmap-point"></div>
+                      {idx < 4 && <div className="hv-roadmap-line"></div>}
+                    </div>
+                    <div className="hv-roadmap-card">
+                      <div className="hv-roadmap-badge">{item.tag}</div>
+                      <h4 className="hv-roadmap-title">{item.title}</h4>
+                      <p className="hv-roadmap-desc">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       {/* ── Mission Strip ── */}
       <section style={{ background: 'var(--color-bg-alt)', padding: '4rem 0', borderBottom: '1px solid var(--color-border)' }}>
         <div className="container">
