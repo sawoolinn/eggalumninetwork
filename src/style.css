@@ -606,8 +606,12 @@ a:hover { color: var(--color-navy); text-decoration: underline; }
 
 /* ── HERO ── */
 .hero {
-  background: var(--color-navy);
-  padding: 6rem 0 5.5rem 0;
+  background-color: var(--color-navy);
+  background-image: url('/assets/hero-alumni-group.jpg');
+  background-size: cover;
+  background-position: center 25%;
+  background-repeat: no-repeat;
+  padding: 6.5rem 0 6rem 0;
   position: relative;
   overflow: hidden;
 }
@@ -616,7 +620,12 @@ a:hover { color: var(--color-navy); text-decoration: underline; }
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(150deg, rgba(27,79,155,0.18) 0%, transparent 55%);
+  background: linear-gradient(
+    135deg,
+    rgba(8, 22, 48, 0.94) 0%,
+    rgba(13, 34, 70, 0.88) 55%,
+    rgba(13, 34, 70, 0.72) 100%
+  );
   pointer-events: none;
 }
 
