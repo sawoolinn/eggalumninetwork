@@ -159,10 +159,10 @@ export default function HomeSection({ onNavigate, onOpenNews, onOpenEvent }) {
 
           </div>
 
-          {/* ── Harvard-Style Immersive Event Spotlights (Two Banners, Concise Descriptions) ── */}
+          {/* ── Harvard-Style Immersive Event Spotlights (Concise Descriptions, Alternating Alignment) ── */}
           <div className="hv-event-spotlights-stack">
 
-            {/* Spotlight 1: Graduation Commencement */}
+            {/* Spotlight 1: Graduation Commencement (Left-Aligned) */}
             <div className="hv-event-hero-banner hv-banner-graduation">
               <div className="hv-event-hero-overlay">
                 <div className="hv-event-hero-content">
@@ -193,7 +193,38 @@ export default function HomeSection({ onNavigate, onOpenNews, onOpenEvent }) {
               </div>
             </div>
 
-            {/* Spotlight 2: Art Exhibition & Youth Gathering */}
+            {/* Spotlight 2: Community Assembly & Cultural Day (Right-Aligned Text) */}
+            <div className="hv-event-hero-banner hv-banner-cultural hv-align-right">
+              <div className="hv-event-hero-overlay hv-overlay-right">
+                <div className="hv-event-hero-content hv-content-right">
+                  <span className="hv-event-hero-eyebrow hv-eyebrow-right">
+                    <i className="fa-solid fa-users"></i> Cultural Heritage &middot; Tounge La&apos; Yat Assembly
+                  </span>
+
+                  <h3 className="hv-event-hero-title hv-title-right">
+                    Community Assembly &amp; Cultural Day
+                  </h3>
+
+                  <p className="hv-event-hero-desc hv-desc-right">
+                    Celebrating ethnic heritage, community solidarity, and youth leadership as alumni and students gather in traditional unity.
+                  </p>
+
+                  <button
+                    className="hv-event-hero-cta hv-cta-right"
+                    onClick={() => onNavigate('events')}
+                  >
+                    <span className="hv-event-hero-cta-label">
+                      View cultural gathering highlights
+                    </span>
+                    <span className="hv-event-hero-circle">
+                      <i className="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Spotlight 3: Art Exhibition & Youth Gathering (Left-Aligned) */}
             <div className="hv-event-hero-banner hv-banner-artexhibit">
               <div className="hv-event-hero-overlay">
                 <div className="hv-event-hero-content">

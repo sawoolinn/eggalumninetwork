@@ -1053,6 +1053,11 @@ a:hover { color: var(--color-navy); text-decoration: underline; }
   background-position: center 20%;
 }
 
+.hv-banner-cultural {
+  background-image: url('/assets/cultural-heritage-assembly.jpg');
+  background-position: center 25%;
+}
+
 .hv-banner-artexhibit {
   background-image: url('/assets/latest-event-art-exhibition.jpg');
   background-position: center 30%;
@@ -1070,6 +1075,43 @@ a:hover { color: var(--color-navy); text-decoration: underline; }
   min-height: 440px;
   display: flex;
   align-items: center;
+}
+
+/* Right-Aligned Banner Modifier */
+.hv-overlay-right {
+  background: linear-gradient(
+    270deg,
+    rgba(8, 22, 48, 0.95) 0%,
+    rgba(13, 34, 70, 0.88) 50%,
+    rgba(13, 34, 70, 0.58) 85%,
+    rgba(13, 34, 70, 0.42) 100%
+  );
+  justify-content: flex-end;
+}
+
+.hv-content-right {
+  text-align: right;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.hv-eyebrow-right {
+  justify-content: flex-end;
+}
+
+.hv-title-right,
+.hv-desc-right {
+  text-align: right;
+}
+
+.hv-cta-right {
+  justify-content: flex-end;
+  text-align: right;
+}
+.hv-cta-right:hover .hv-event-hero-circle {
+  transform: translateX(6px);
 }
 
 .hv-event-hero-content {
@@ -1164,13 +1206,31 @@ a:hover { color: var(--color-navy); text-decoration: underline; }
 }
 
 @media (max-width: 768px) {
-  .hv-event-hero-overlay {
+  .hv-event-hero-overlay,
+  .hv-overlay-right {
     padding: 3.5rem 1.75rem;
     background: linear-gradient(
       180deg,
-      rgba(8, 22, 48, 0.92) 0%,
-      rgba(13, 34, 70, 0.95) 100%
+      rgba(8, 22, 48, 0.94) 0%,
+      rgba(13, 34, 70, 0.96) 100%
     );
+    justify-content: flex-start;
+  }
+  .hv-content-right {
+    text-align: left;
+    align-items: flex-start;
+    margin-left: 0;
+  }
+  .hv-eyebrow-right {
+    justify-content: flex-start;
+  }
+  .hv-title-right,
+  .hv-desc-right {
+    text-align: left;
+  }
+  .hv-cta-right {
+    justify-content: flex-start;
+    text-align: left;
   }
   .hv-event-hero-title {
     font-size: 1.95rem;
