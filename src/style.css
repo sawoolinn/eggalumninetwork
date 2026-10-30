@@ -1022,16 +1022,31 @@ a:hover { color: var(--color-navy); text-decoration: underline; }
   }
 }
 
-/* ── HARVARD-STYLE IMMERSIVE EVENT BANNER (Left-Aligned Text on Picture) ── */
-.hv-event-hero-banner {
+/* ── HARVARD-STYLE IMMERSIVE EVENT BANNERS (Left-Aligned Text on Picture) ── */
+.hv-event-spotlights-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
   margin-top: 5rem;
-  background-image: url('/assets/latest-event-art-exhibition.jpg');
+}
+
+.hv-event-hero-banner {
   background-size: cover;
   background-position: center 30%;
   position: relative;
   border: 1px solid var(--color-border);
   box-shadow: var(--shadow-md);
   overflow: hidden;
+}
+
+.hv-banner-graduation {
+  background-image: url('/assets/graduation-commencement.jpg');
+  background-position: center 20%;
+}
+
+.hv-banner-artexhibit {
+  background-image: url('/assets/latest-event-art-exhibition.jpg');
+  background-position: center 30%;
 }
 
 .hv-event-hero-overlay {
@@ -1042,8 +1057,8 @@ a:hover { color: var(--color-navy); text-decoration: underline; }
     rgba(13, 34, 70, 0.58) 85%,
     rgba(13, 34, 70, 0.42) 100%
   );
-  padding: 5.5rem 4.5rem;
-  min-height: 480px;
+  padding: 4.8rem 4.5rem;
+  min-height: 440px;
   display: flex;
   align-items: center;
 }

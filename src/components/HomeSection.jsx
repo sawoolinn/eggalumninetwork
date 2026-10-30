@@ -159,35 +159,71 @@ export default function HomeSection({ onNavigate, onOpenNews, onOpenEvent }) {
 
           </div>
 
-          {/* ── Harvard-Style Immersive Event Banner (Left-Aligned Text on Picture) ── */}
-          <div className="hv-event-hero-banner">
-            <div className="hv-event-hero-overlay">
-              <div className="hv-event-hero-content">
-                <span className="hv-event-hero-eyebrow">
-                  <i className="fa-solid fa-calendar-check"></i> Latest Event Spotlight &middot; Tounge La&apos; Yat Community College
-                </span>
+          {/* ── Harvard-Style Immersive Event Spotlights (Two Banners, Concise Descriptions) ── */}
+          <div className="hv-event-spotlights-stack">
 
-                <h3 className="hv-event-hero-title">
-                  Art Exhibition &amp; Youth Gathering
-                </h3>
-
-                <p className="hv-event-hero-desc">
-                  Continuing the foundational vision established in 2010, students, educators, and alumni leaders recently gathered in the main assembly hall to celebrate creative expression, showcase student artwork, and open pathways for future higher education.
-                </p>
-
-                <button
-                  className="hv-event-hero-cta"
-                  onClick={() => onNavigate('events')}
-                >
-                  <span className="hv-event-hero-circle">
-                    <i className="fa-solid fa-arrow-right"></i>
+            {/* Spotlight 1: Graduation Commencement */}
+            <div className="hv-event-hero-banner hv-banner-graduation">
+              <div className="hv-event-hero-overlay">
+                <div className="hv-event-hero-content">
+                  <span className="hv-event-hero-eyebrow">
+                    <i className="fa-solid fa-graduation-cap"></i> Academic Milestone &middot; Commencement
                   </span>
-                  <span className="hv-event-hero-cta-label">
-                    Learn more about our community gatherings &amp; sessions
-                  </span>
-                </button>
+
+                  <h3 className="hv-event-hero-title">
+                    EGG Academy Commencement Ceremony
+                  </h3>
+
+                  <p className="hv-event-hero-desc">
+                    Honoring the perseverance and academic achievements of our graduating cohort as they step forward into universities and leadership roles worldwide.
+                  </p>
+
+                  <button
+                    className="hv-event-hero-cta"
+                    onClick={() => onNavigate('events')}
+                  >
+                    <span className="hv-event-hero-circle">
+                      <i className="fa-solid fa-arrow-right"></i>
+                    </span>
+                    <span className="hv-event-hero-cta-label">
+                      Explore graduation highlights &amp; alumni stories
+                    </span>
+                  </button>
+                </div>
               </div>
             </div>
+
+            {/* Spotlight 2: Art Exhibition & Youth Gathering */}
+            <div className="hv-event-hero-banner hv-banner-artexhibit">
+              <div className="hv-event-hero-overlay">
+                <div className="hv-event-hero-content">
+                  <span className="hv-event-hero-eyebrow">
+                    <i className="fa-solid fa-palette"></i> Community Gathering &middot; Tounge La&apos; Yat
+                  </span>
+
+                  <h3 className="hv-event-hero-title">
+                    Art Exhibition &amp; Youth Gathering
+                  </h3>
+
+                  <p className="hv-event-hero-desc">
+                    Bringing students, educators, and alumni together to celebrate creative visual arts, foster dialogue, and open pathways for higher education.
+                  </p>
+
+                  <button
+                    className="hv-event-hero-cta"
+                    onClick={() => onNavigate('events')}
+                  >
+                    <span className="hv-event-hero-circle">
+                      <i className="fa-solid fa-arrow-right"></i>
+                    </span>
+                    <span className="hv-event-hero-cta-label">
+                      Learn more about our community gatherings
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
           </div>
 
         </div>
