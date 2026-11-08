@@ -1,51 +1,50 @@
 {
- "about": {
+  "about": {
     "title": "",
     "story": "The EGG Alumni Network was established in 2013 as a platform to unite graduates of EGG Academy, fostering collaboration and continued development among alumni. The network builds on the collective efforts of its members to promote meaningful change in their communities.",
     "mission": [
       "To collaborate with individuals and civil society organizations, building a robust network dedicated to strengthening community development.",
       "To enhance capacity-building initiatives, raise environmental awareness, and implement small and microcredit programs to support local economies.",
       "To organize fundraising activities and youth social gatherings, encouraging active participation in communitydevelopment"
-      ],
+    ],
     "vision": "To contribute to a stronger and more resilient society by fostering community development grounded in mutual respect, shared responsibility, and accountability."
   },
-"stats": [
-    { "label": "Total Alumni", "value": "400+", "icon": "fa-users" },
-    { "label": "Scholarships Awarded", "value": "40+", "icon": "fa-graduation-cap" },
-    { "label": "Active Global Chapters", "value": "", "icon": "fa-globe" },
-    { "label": "Sharing Sessions Hosted", "value": "95+", "icon": "fa-comments" }
+  "stats": [
+    { "label": "Total Alumni", "value": "-", "icon": "fa-users" },
+    { "label": "Scholarships Awarded", "value": "-", "icon": "fa-graduation-cap" },
+    { "label": "Active Global Chapters", "value": "-", "icon": "fa-globe" },
+    { "label": "Sharing Sessions Hosted", "value": "-", "icon": "fa-comments" }
   ],
-  
   "timeline": [
     {
-      "year": "1991",
+      "year": "-",
       "title": "School Founding & First Graduating Class",
-      "description": "The institution welcomed its inaugural class of 80 students, laying the foundation for academic excellence and community leadership."
+      "description": "-"
     },
     {
-      "year": "2002",
+      "year": "-",
       "title": "Official Charter of EggAlumni Network",
-      "description": "Former students formally established the EggAlumni Network association with its first elected executive board."
+      "description": "-"
     },
     {
-      "year": "2010",
+      "year": "-",
       "title": "Launch of Abroad Scholarship Guidance Guild",
-      "description": "Created the first dedicated mentorship committee to prepare graduating seniors for competitive overseas university admissions."
+      "description": "-"
     },
     {
-      "year": "2018",
+      "year": "-",
       "title": "Establishment of Global Chapters & Endowment",
-      "description": "Expanded regional chapters in North America, Europe, and Asia, accompanied by a $500,000 student assistance endowment fund."
+      "description": "-"
     },
     {
-      "year": "2024",
-      "title": "$1.5M Endowment Milestone & Digital Portal",
-      "description": "Reached $1.5M in fund reserves and launched the integrated digital network platform connecting alumni across 30+ countries."
+      "year": "-",
+      "title": "Endowment Milestone & Digital Portal",
+      "description": "-"
     },
     {
-      "year": "2026",
+      "year": "-",
       "title": "Global Innovation Partnerships & Virtual Hub",
-      "description": "Formed international partnerships with European research labs and Silicon Valley accelerators, offering 15+ annual fellowships abroad."
+      "description": "-"
     }
   ]
 }

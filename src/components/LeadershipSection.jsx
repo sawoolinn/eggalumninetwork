@@ -24,18 +24,24 @@ export default function LeadershipSection({ onNavigate }) {
         <div className="container">
           <div className="section-header">
             <span className="section-tag"><i className="fa-solid fa-people-group"></i> The Team</span>
-            <h2 className="section-title">Executive Board {new Date().getFullYear()}</h2>
-            <p className="section-subtitle">All board members are democratically elected by registered alumni and serve two-year renewable terms.</p>
+            <h2 className="section-title">Executive Board</h2>
+            <p className="section-subtitle">-</p>
           </div>
 
           <div className="leadership-grid">
             {leadershipData.map((leader) => (
               <div key={leader.id} className="leader-card">
-                <img src={leader.avatar} alt={leader.name} className="leader-avatar" />
+                {leader.avatar ? (
+                  <img src={leader.avatar} alt={leader.name} className="leader-avatar" />
+                ) : (
+                  <div className="leader-avatar" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--color-bg-alt)', color: 'var(--color-primary)', fontSize: '2rem' }}>
+                    <i className="fa-solid fa-user"></i>
+                  </div>
+                )}
                 <h3 className="leader-name">{leader.name}</h3>
                 <p className="leader-role">{leader.role}</p>
                 <p className="leader-batch"><i className="fa-solid fa-graduation-cap"></i> {leader.classYear}</p>
-                <p style={{ fontSize: '0.82rem', color: 'var(--color-text-muted)', lineHeight: '1.65', margin: '0.75rem 0', fontFamily: 'var(--font-sans)' }}>{leader.bio}</p>
+                <p style={{ fontSize: '0.82rem', color: 'var(--color-text-muted)', lineHeight: '1.65', margin: '0.75rem 0', fontFamily: 'var(--font-sans)' }}>{leader.bio || '-'}</p>
                 <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center', marginTop: 'auto', paddingTop: '0.75rem', borderTop: '1px solid var(--color-border)' }}>
                   {leader.linkedin && (
                     <a href={leader.linkedin} target="_blank" rel="noopener noreferrer"
@@ -70,10 +76,7 @@ export default function LeadershipSection({ onNavigate }) {
                 Board Elections Held Annually
               </h2>
               <p style={{ fontSize: '0.95rem', color: 'var(--color-text-muted)', lineHeight: '1.8', marginBottom: '1.5rem', fontFamily: 'var(--font-sans)' }}>
-                The EggAlumni executive committee is democratically elected each year by registered alumni members. All leadership terms are two years, renewable once, ensuring fresh perspectives and continued momentum.
-              </p>
-              <p style={{ fontSize: '0.95rem', color: 'var(--color-text-muted)', lineHeight: '1.8', fontFamily: 'var(--font-sans)' }}>
-                Nominees must be active members in good standing for at least one year prior to election. Voting is open to all registered alumni via our secure online portal, ensuring every voice is heard.
+                -
               </p>
               <button className="btn btn-primary" style={{ marginTop: '2rem' }} onClick={() => onNavigate('contact')}>
                 <i className="fa-solid fa-paper-plane"></i> Contact the Board
@@ -82,10 +85,10 @@ export default function LeadershipSection({ onNavigate }) {
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               {[
-                { step: '01', title: 'Nomination Period',   desc: 'Open nominations for two weeks in September. Any active member may nominate themselves or a peer.' },
-                { step: '02', title: 'Candidate Profiles',  desc: 'All nominees submit a biography and platform statement published to the alumni portal.' },
-                { step: '03', title: 'Online Voting',       desc: 'Secure digital ballots are open for one week in October, accessible by all registered members.' },
-                { step: '04', title: 'Inauguration',        desc: 'New board members are officially inaugurated at the Annual General Meeting in November.' },
+                { step: '01', title: 'Nomination Period',   desc: '-' },
+                { step: '02', title: 'Candidate Profiles',  desc: '-' },
+                { step: '03', title: 'Online Voting',       desc: '-' },
+                { step: '04', title: 'Inauguration',        desc: '-' },
               ].map((s) => (
                 <div key={s.step} style={{ display: 'flex', gap: '1.25rem', padding: '1.25rem', background: '#fff', border: '1px solid var(--color-border)' }}>
                   <div style={{ fontFamily: 'var(--font-serif)', fontSize: '1.8rem', fontWeight: '700', color: 'var(--color-border)', lineHeight: '1', flexShrink: 0, minWidth: '2.5rem' }}>{s.step}</div>
@@ -109,10 +112,10 @@ export default function LeadershipSection({ onNavigate }) {
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: '1.5rem' }}>
             {[
-              { icon: 'fa-eye',           title: 'Transparency',   desc: 'All financial reports and board minutes are published to members quarterly.' },
-              { icon: 'fa-gavel',         title: 'Accountability', desc: 'Board decisions are subject to alumni review and can be challenged via formal petition.' },
-              { icon: 'fa-users-between-lines', title: 'Inclusivity', desc: 'We actively seek representation from all graduating classes and global chapters.' },
-              { icon: 'fa-arrows-rotate', title: 'Continuity',     desc: 'Outgoing board members provide structured handover to ensure seamless leadership transitions.' },
+              { icon: 'fa-eye',           title: 'Transparency',   desc: '-' },
+              { icon: 'fa-gavel',         title: 'Accountability', desc: '-' },
+              { icon: 'fa-users-between-lines', title: 'Inclusivity', desc: '-' },
+              { icon: 'fa-arrows-rotate', title: 'Continuity',     desc: '-' },
             ].map((g) => (
               <div key={g.title} style={{ textAlign: 'center', padding: '2rem 1.5rem', background: 'var(--color-bg-alt)', border: '1px solid var(--color-border)' }}>
                 <i className={`fa-solid ${g.icon}`} style={{ color: 'var(--color-primary)', fontSize: '1.75rem', display: 'block', marginBottom: '1rem' }}></i>

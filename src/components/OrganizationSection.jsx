@@ -86,10 +86,10 @@ export default function OrganizationSection({ onNavigate }) {
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               {[
-                { icon: 'fa-graduation-cap', title: 'Scholarship Sponsors',    desc: 'Fund study-abroad scholarships or fellowship programmes for qualifying alumni.' },
-                { icon: 'fa-chalkboard',    title: 'University Partners',     desc: 'Offer admission pathways, conditional acceptance, or alumni mentoring programmes.' },
-                { icon: 'fa-building',      title: 'Corporate Partners',      desc: 'Provide internships, graduate roles, or professional development opportunities.' },
-                { icon: 'fa-globe',         title: 'International Bodies',    desc: 'Collaborate on community development, civic engagement, or youth leadership initiatives.' },
+                { icon: 'fa-graduation-cap', title: 'Scholarship Sponsors',    desc: '-' },
+                { icon: 'fa-chalkboard',    title: 'University Partners',     desc: '-' },
+                { icon: 'fa-building',      title: 'Corporate Partners',      desc: '-' },
+                { icon: 'fa-globe',         title: 'International Bodies',    desc: '-' },
               ].map((item) => (
                 <div key={item.title} style={{ display: 'flex', gap: '1rem', padding: '1.25rem', background: '#fff', border: '1px solid var(--color-border)' }}>
                   <div style={{ width: '40px', height: '40px', background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>

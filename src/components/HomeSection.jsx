@@ -16,7 +16,7 @@ export default function HomeSection({ onNavigate, onOpenNews, onOpenEvent }) {
         <div className="container hero-grid">
           <div className="hero-content">
             <div className="hero-badge">
-              <i className="fa-solid fa-graduation-cap"></i> Official EGG Alumni Network · Est. 2002
+              <i className="fa-solid fa-graduation-cap"></i> Official EGG Alumni Network · Est. -
             </div>
             <h1 className="hero-title">
               Connecting Generations,{' '}
@@ -70,27 +70,23 @@ export default function HomeSection({ onNavigate, onOpenNews, onOpenEvent }) {
                 <i className="fa-solid fa-landmark"></i> About Us &middot; Founding Roots
               </span>
               <h2 className="hv-journey-title">
-                Started with a Purpose in 2010, <br />
-                <span>Growing Stronger in 2026.</span>
+                Started with a Purpose, <br />
+                <span>Growing Stronger.</span>
               </h2>
               
               <p className="hv-journey-lead">
-                In 2010, a group of forward-thinking educators and grassroots community leaders set out to develop the academy with a profound conviction: that empowering young individuals through rigorous education, mutual accountability, and moral courage could transform entire communities.
-              </p>
-
-              <p className="hv-journey-body">
-                What began in 2010 as a grassroots educational initiative quickly evolved. By 2013, the graduates founded the official <strong>EGG Alumni Network</strong> to ensure that every graduating cohort could remain connected, mentor junior scholars, and spearhead social development projects.
+                -
               </p>
 
               {/* Harvard-Style Editorial Quote Box */}
               <div className="hv-founder-callout">
                 <div className="hv-founder-quote-mark">“</div>
                 <blockquote className="hv-founder-quote">
-                  We did not merely build classrooms; we cultivated a resilient brotherhood and sisterhood of leaders who carry their community’s future with them wherever they go in the world.
+                  -
                 </blockquote>
                 <div className="hv-founder-attribution">
-                  <span className="hv-founder-name">Founding Leadership Council</span>
-                  <span className="hv-founder-role">EGG Academy Development Initiative &middot; 2010</span>
+                  <span className="hv-founder-name">-</span>
+                  <span className="hv-founder-role">-</span>
                 </div>
               </div>
 
@@ -101,47 +97,47 @@ export default function HomeSection({ onNavigate, onOpenNews, onOpenEvent }) {
               </div>
             </div>
 
-            {/* Right: Journey Milestones Roadmap (2010 to 2026) */}
+            {/* Right: Journey Milestones Roadmap */}
             <div className="hv-journey-roadmap">
               <div className="hv-roadmap-header">
                 <span className="hv-roadmap-eyebrow">CHRONOLOGICAL ROADMAP</span>
-                <h3 className="hv-roadmap-headline">Our Evolutionary Path (2010 &ndash; 2026)</h3>
+                <h3 className="hv-roadmap-headline">Our Evolutionary Path</h3>
               </div>
 
               <div className="hv-roadmap-timeline">
                 {[
                   {
-                    year: '2010',
+                    year: '-',
                     title: 'The Founding & School Development',
-                    desc: 'Visionary founders and community leaders initiated the development of EGG Academy, establishing core curricula focused on civic responsibility, academic rigor, and leadership.',
-                    tag: 'Genesis & Development'
+                    desc: '-',
+                    tag: '-'
                   },
                   {
-                    year: '2013',
+                    year: '-',
                     title: 'Alumni Network Formalization',
-                    desc: 'The graduating alumni united to establish the official EGG Alumni Network, instituting democratic governance and mutual mentorship frameworks.',
-                    tag: 'Official Charter'
+                    desc: '-',
+                    tag: '-'
                   },
                   {
-                    year: '2018',
+                    year: '-',
                     title: 'Abroad Scholarship Guild & Global Reach',
-                    desc: 'Expanded overseas university guidance, supporting students to secure study-abroad scholarships across Europe, Asia, and North America.',
-                    tag: 'Global Fellowship'
+                    desc: '-',
+                    tag: '-'
                   },
                   {
-                    year: '2022',
+                    year: '-',
                     title: 'Community Capacity & Microcredit Programs',
-                    desc: 'Pioneered microcredit support for local economies, environmental awareness campaigns, and youth-led community development initiatives.',
-                    tag: 'Civic Impact'
+                    desc: '-',
+                    tag: '-'
                   },
                   {
-                    year: '2026',
-                    title: 'Global Innovation & 400+ Alumni Milestone',
-                    desc: 'A thriving international fellowship of 400+ graduates active across 30+ nations, advancing research fellowships, institutional partnerships, and continuous alumni mentorship.',
-                    tag: '2026 & Beyond'
+                    year: '-',
+                    title: 'Global Innovation & Alumni Milestone',
+                    desc: '-',
+                    tag: '-'
                   }
                 ].map((item, idx) => (
-                  <div key={item.year} className="hv-roadmap-item">
+                  <div key={idx} className="hv-roadmap-item">
                     <div className="hv-roadmap-node">
                       <span className="hv-roadmap-year">{item.year}</span>
                       <div className="hv-roadmap-point"></div>
@@ -175,7 +171,7 @@ export default function HomeSection({ onNavigate, onOpenNews, onOpenEvent }) {
                   </h3>
 
                   <p className="hv-event-hero-desc">
-                    Honoring the perseverance and academic achievements of our graduating cohort as they step forward into universities and leadership roles worldwide.
+                    -
                   </p>
 
                   <button
@@ -206,7 +202,7 @@ export default function HomeSection({ onNavigate, onOpenNews, onOpenEvent }) {
                   </h3>
 
                   <p className="hv-event-hero-desc hv-desc-right">
-                    Celebrating ethnic heritage, community solidarity, and youth leadership as alumni and students gather in traditional unity.
+                    -
                   </p>
 
                   <button
@@ -237,7 +233,7 @@ export default function HomeSection({ onNavigate, onOpenNews, onOpenEvent }) {
                   </h3>
 
                   <p className="hv-event-hero-desc">
-                    Bringing students, educators, and alumni together to celebrate creative visual arts, foster dialogue, and open pathways for higher education.
+                    -
                   </p>
 
                   <button
@@ -265,9 +261,9 @@ export default function HomeSection({ onNavigate, onOpenNews, onOpenEvent }) {
         <div className="container">
           <div className="hv-mission-grid">
             {[
-              { icon: 'fa-handshake', title: 'Community', desc: 'Building bridges between alumni across generations, professions, and continents.' },
-              { icon: 'fa-graduation-cap', title: 'Scholarship', desc: 'Guiding members toward internationally recognised study-abroad and fellowship opportunities.' },
-              { icon: 'fa-earth-asia', title: 'Impact', desc: 'Driving community development through fundraising, mentorship, and grassroots initiatives.' },
+              { icon: 'fa-handshake', title: 'Community', desc: '-' },
+              { icon: 'fa-graduation-cap', title: 'Scholarship', desc: '-' },
+              { icon: 'fa-earth-asia', title: 'Impact', desc: '-' },
             ].map((v) => (
               <div key={v.title} style={{ textAlign: 'center', padding: '2rem' }}>
                 <div style={{
@@ -344,7 +340,13 @@ export default function HomeSection({ onNavigate, onOpenNews, onOpenEvent }) {
                   <h3 className="event-title">{event.title}</h3>
                   <p style={{ fontSize: '0.875rem', color: 'var(--color-text-muted)', fontFamily: 'var(--font-sans)' }}>{event.summary}</p>
                   <div className="event-speaker-box">
-                    <img src={event.speaker.avatar} alt={event.speaker.name} className="speaker-avatar" />
+                    {event.speaker?.avatar ? (
+                      <img src={event.speaker.avatar} alt={event.speaker.name} className="speaker-avatar" />
+                    ) : (
+                      <div className="speaker-avatar" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--color-bg-alt)', color: 'var(--color-primary)' }}>
+                        <i className="fa-solid fa-user"></i>
+                      </div>
+                    )}
                     <div className="speaker-info">
                       <h5>{event.speaker.name}</h5>
                       <p>{event.speaker.role}</p>
@@ -375,11 +377,17 @@ export default function HomeSection({ onNavigate, onOpenNews, onOpenEvent }) {
           <div className="hv-featured-leaders-grid">
             {featuredLeaders.map((leader) => (
               <div key={leader.id} className="leader-card">
-                <img src={leader.avatar} alt={leader.name} className="leader-avatar" />
+                {leader.avatar ? (
+                  <img src={leader.avatar} alt={leader.name} className="leader-avatar" />
+                ) : (
+                  <div className="leader-avatar" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--color-bg-alt)', color: 'var(--color-primary)', fontSize: '2rem' }}>
+                    <i className="fa-solid fa-user"></i>
+                  </div>
+                )}
                 <h3 className="leader-name">{leader.name}</h3>
                 <p className="leader-role">{leader.role}</p>
                 <p className="leader-batch"><i className="fa-solid fa-graduation-cap"></i> {leader.classYear}</p>
-                <p style={{ fontSize: '0.82rem', color: 'var(--color-text-muted)', marginTop: '0.6rem', lineHeight: '1.6', fontFamily: 'var(--font-sans)' }}>{leader.bio}</p>
+                <p style={{ fontSize: '0.82rem', color: 'var(--color-text-muted)', marginTop: '0.6rem', lineHeight: '1.6', fontFamily: 'var(--font-sans)' }}>{leader.bio || '-'}</p>
               </div>
             ))}
           </div>

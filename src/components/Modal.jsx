@@ -77,7 +77,13 @@ function EventModalContent({ data }) {
       </div>
 
       <div className="event-speaker-box" style={{ marginBottom: '1.5rem' }}>
-        <img src={data.speaker.avatar} alt={data.speaker.name} className="speaker-avatar" style={{ width: '52px', height: '52px' }} />
+        {data.speaker?.avatar ? (
+          <img src={data.speaker.avatar} alt={data.speaker.name} className="speaker-avatar" style={{ width: '52px', height: '52px' }} />
+        ) : (
+          <div className="speaker-avatar" style={{ width: '52px', height: '52px', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--color-bg-alt)', color: 'var(--color-primary)' }}>
+            <i className="fa-solid fa-user"></i>
+          </div>
+        )}
         <div className="speaker-info">
           <h5 style={{ fontSize: '0.95rem', fontFamily: 'var(--font-sans)' }}>{data.speaker.name}</h5>
           <p style={{ fontSize: '0.8rem', fontFamily: 'var(--font-sans)' }}>{data.speaker.role}</p>

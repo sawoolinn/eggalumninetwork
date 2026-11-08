@@ -18,7 +18,7 @@ export default function HistorySection({ onNavigate }) {
             Our Story &amp; Mission
           </h1>
           <p style={{ color: 'rgba(255,255,255,0.62)', fontSize: '1rem', maxWidth: '580px', fontFamily: 'var(--font-sans)', lineHeight: '1.75' }}>
-            From a school founding in 1991 to a global alumni network spanning 30+ countries — discover the journey of EGG Alumni Network.
+            -
           </p>
         </div>
       </div>
@@ -36,7 +36,7 @@ export default function HistorySection({ onNavigate }) {
                 {about.story}
               </p>
               <p style={{ fontSize: '0.95rem', color: 'var(--color-text-muted)', lineHeight: '1.8', fontFamily: 'var(--font-sans)' }}>
-                Over more than two decades, the network has grown from a small circle of graduates into a dynamic global community with representation across Asia, Europe, North America, and beyond. Every chapter carries forward the founding spirit of mutual respect, shared responsibility, and community uplift.
+                -
               </p>
             </div>
 
@@ -116,12 +116,12 @@ export default function HistorySection({ onNavigate }) {
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '1.5rem', marginTop: '3rem' }}>
             {[
-              { icon: 'fa-heart-handshake', title: 'Mutual Respect',     desc: 'We honour every member\'s background, perspective, and journey — regardless of generation or geography.' },
-              { icon: 'fa-scale-balanced',  title: 'Accountability',     desc: 'We hold ourselves and our leaders to the highest standards of transparency and responsible stewardship.' },
-              { icon: 'fa-seedling',        title: 'Community Growth',   desc: 'Every initiative — from scholarships to fundraisers — is designed to lift communities, not just individuals.' },
-              { icon: 'fa-globe',           title: 'Global Perspective', desc: 'With alumni in 30+ countries, we embrace diverse viewpoints as a source of strength and innovation.' },
-              { icon: 'fa-lightbulb',       title: 'Innovation',         desc: 'We adapt to the changing world, embracing digital tools and new models of alumni engagement.' },
-              { icon: 'fa-handshake',       title: 'Collaboration',      desc: 'Our greatest achievements come not from individuals alone, but from alumni working together.' },
+              { icon: 'fa-heart-handshake', title: 'Mutual Respect',     desc: '-' },
+              { icon: 'fa-scale-balanced',  title: 'Accountability',     desc: '-' },
+              { icon: 'fa-seedling',        title: 'Community Growth',   desc: '-' },
+              { icon: 'fa-globe',           title: 'Global Perspective', desc: '-' },
+              { icon: 'fa-lightbulb',       title: 'Innovation',         desc: '-' },
+              { icon: 'fa-handshake',       title: 'Collaboration',      desc: '-' },
             ].map((v) => (
               <div key={v.title} style={{ background: '#fff', border: '1px solid var(--color-border)', padding: '2rem', transition: 'box-shadow 0.15s ease' }}
                 onMouseEnter={(e) => e.currentTarget.style.boxShadow = 'var(--shadow-md)'}

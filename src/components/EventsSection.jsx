@@ -25,9 +25,9 @@ export default function EventsSection({ onOpenEvent, onNavigate }) {
           {/* Quick stats */}
           <div style={{ display: 'flex', gap: '2rem', marginTop: '2rem', flexWrap: 'wrap' }}>
             {[
-              { label: 'Upcoming Events', value: upcoming.length },
-              { label: 'Past Sessions',   value: past.length },
-              { label: 'Total Hosted',    value: '95+' },
+              { label: 'Upcoming Events', value: '-' },
+              { label: 'Past Sessions',   value: '-' },
+              { label: 'Total Hosted',    value: '-' },
             ].map((s) => (
               <div key={s.label}>
                 <div style={{ fontFamily: 'var(--font-serif)', fontSize: '2rem', fontWeight: '700', color: '#fff' }}>{s.value}</div>
@@ -105,10 +105,10 @@ export default function EventsSection({ onOpenEvent, onNavigate }) {
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             {[
-              { icon: 'fa-comments',       title: 'Sharing Sessions',   desc: 'Casual, story-led talks about your study or work experience abroad.' },
-              { icon: 'fa-chalkboard-user', title: 'Mentorship Clinics', desc: 'One-on-one or group sessions to guide applicants through university or visa processes.' },
-              { icon: 'fa-people-roof',    title: 'Reunions',           desc: 'Annual or chapter-level gatherings to reconnect and celebrate the network.' },
-              { icon: 'fa-handshake',      title: 'Partnership Events', desc: 'Collaborative events with universities, embassies, or sponsor organisations.' },
+              { icon: 'fa-comments',       title: 'Sharing Sessions',   desc: '-' },
+              { icon: 'fa-chalkboard-user', title: 'Mentorship Clinics', desc: '-' },
+              { icon: 'fa-people-roof',    title: 'Reunions',           desc: '-' },
+              { icon: 'fa-handshake',      title: 'Partnership Events', desc: '-' },
             ].map((item) => (
               <div key={item.title} style={{ display: 'flex', gap: '1rem', padding: '1rem', background: '#fff', border: '1px solid var(--color-border)' }}>
                 <div style={{ width: '38px', height: '38px', background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
@@ -150,7 +150,13 @@ function EventCard({ event, onOpenEvent }) {
 
       {/* Speaker */}
       <div className="event-speaker-box">
-        <img src={event.speaker.avatar} alt={event.speaker.name} className="speaker-avatar" />
+        {event.speaker?.avatar ? (
+          <img src={event.speaker.avatar} alt={event.speaker.name} className="speaker-avatar" />
+        ) : (
+          <div className="speaker-avatar" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--color-bg-alt)', color: 'var(--color-primary)' }}>
+            <i className="fa-solid fa-user"></i>
+          </div>
+        )}
         <div className="speaker-info">
           <h5>{event.speaker.name}</h5>
           <p>{event.speaker.role}</p>
